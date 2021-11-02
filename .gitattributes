@@ -1,3 +1,1 @@
-*.pbxproj binary merge=union
-LinkMoa/Carte/* linguist-vendored
-*.ruby linguist-vendored
+LinkMoa/Carte/* linguist-documentation
