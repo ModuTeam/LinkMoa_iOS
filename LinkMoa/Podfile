@@ -1,0 +1,78 @@
+platform :ios, '13.0'
+
+def appPod()
+  pod 'lottie-ios'
+  pod 'Carte'
+  pod 'GoogleSignIn', '~> 6.0'
+  pod 'Swinject'
+end
+
+def subPod()
+  pod 'Toast-Swift', '~> 5.0'
+  pod 'SwiftLint'
+end
+
+def rxPod()
+  pod 'RxSwift', '~> 5.0'
+  pod 'RxCocoa', '~> 5.0'
+  pod 'RxGesture', '~> 3.0'
+  pod 'RxDataSources', '~> 4.0'
+end
+
+def networkPod()
+  pod 'Moya', '~> 14.0'
+  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'Kanna', '~> 5.2.2'
+  pod 'Kingfisher', '~> 7.0'
+end
+
+target 'LinkMoa' do
+  use_frameworks!
+  appPod()
+  subPod()
+  rxPod()
+  networkPod()
+end
+
+target 'LinkMoaBottomSheet' do
+  use_frameworks!
+  subPod()
+end
+
+target 'LinkMoaBottomSheetTests' do
+  use_frameworks!
+  subPod()
+end
+
+target 'LinkMoaCore' do
+  use_frameworks!
+  subPod()
+  rxPod()
+  networkPod()
+end
+
+target 'LinkMoaCoreTests' do 
+  use_frameworks!
+  subPod()
+  rxPod()
+  networkPod()
+end
+
+target 'LinkMoaShareExtension' do
+  use_frameworks!
+  subPod()
+  rxPod()
+  networkPod()
+end
+
+target 'LinkMoaWidgetExtension' do
+  use_frameworks!
+  subPod()
+  rxPod()
+  networkPod()
+end
+
+post_install do |installer|
+  pods_dir = File.dirname(installer.pods_project.path)
+  at_exit { `ruby #{__dir__}/Carte/carte.rb configure` }
+end

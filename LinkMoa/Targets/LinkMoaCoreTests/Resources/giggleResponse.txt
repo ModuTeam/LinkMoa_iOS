@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- META -->
+<meta charset="utf-8">
+<meta name="Generator" content="XpressEngine">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- TITLE -->
+<title>기글하드웨어 - 뉴스는 기글</title>
+<!-- CSS -->
+<link rel="stylesheet" href="/gg/common/css/xe.min.css?20170415012130" />
+<link rel="stylesheet" href="/gg/layouts/sketchbook5/css/layout.css?20170415012143" />
+<link rel="stylesheet" href="/gg/modules/editor/styles/default/style.css?20170415012257" />
+<link rel="stylesheet" href="/gg/widgetstyles/simple/style.css?20170415012138" />
+<link rel="stylesheet" href="/gg/widgets/content/skins/default_time/css/widget.css?20170502175508" />
+<link rel="stylesheet" href="/gg/widgets/widget_banner/skins/widget_banner_skin/css/widget.css?20170415012327" />
+<link rel="stylesheet" href="/gg/widgets/contentextended/skins/default/css/widget.css?20170415012326" />
+<link rel="stylesheet" href="/gg/widgets/content/skins/default_main/css/widget.css?20180312123059" />
+<link rel="stylesheet" href="/gg/widgets/content/skins/default/css/widget.css?20170415012325" />
+<link rel="stylesheet" href="/gg/widgets/newest_comment/skins/gigglehd/css/normal.css?20170415012327" />
+<link rel="stylesheet" href="/gg/files/faceOff/754/013/layout.css?20200415230217" />
+<!-- JS -->
+<!--[if lt IE 9]><script src="/gg/common/js/jquery-1.x.min.js?20170415012131"></script>
+<![endif]--><!--[if gte IE 9]><!--><script src="/gg/common/js/jquery.min.js?20170415012131"></script>
+<!--<![endif]--><script src="/gg/common/js/x.min.js?20170822054433"></script>
+<script src="/gg/common/js/xe.min.js?20170822054433"></script>
+<script src="/gg/widgets/content/skins/default_time/js/content_widget.js?20170415012325"></script>
+<script src="/gg/widgets/contentextended/skins/default/js/content_widget.js?20170415012326"></script>
+<script src="/gg/widgets/content/skins/default_main/js/content_widget.js?20170415012325"></script>
+<script src="/gg/widgets/content/skins/default/js/content_widget.js?20170415012325"></script>
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title="Site RSS" href="https://gigglehd.com/gg/rss" /><link rel="alternate" type="application/atom+xml" title="Site Atom" href="https://gigglehd.com/gg/atom" /><!-- ICON -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes, target-densitydpi=medium-dpi" />
+<style> .xe_content { font-size:14px; }</style>
+<link rel="canonical" href="https://gigglehd.com/gg/" />
+<meta name="keywords" content="뉴스,기글,하드웨어,컴퓨터,스마트폰,태블릿,노트북,디카,디지털카메라,게임,소프트웨어" />
+<meta name="description" content="뉴스와 테스트, 벤치마크: 컴퓨터 하드웨어, 스마트폰과 태블릿, 노트북과 디카, 게임과 소프트웨어" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gigglehd.com/gg/" />
+<meta property="og:site_name" content="기글하드웨어" />
+<meta property="og:title" content="기글하드웨어 - 뉴스는 기글" />
+<meta property="og:description" content="뉴스와 테스트, 벤치마크: 컴퓨터 하드웨어, 스마트폰과 태블릿, 노트북과 디카, 게임과 소프트웨어" />
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1453776-1', 'auto');
+ga('send', 'pageview', '/');
+</script>
+
+<style type="text/css">
+body,input,textarea,select,button,table{font-family:'Segoe UI',Meiryo,'Trebuchet MS','나눔고딕',NanumGothic,ng,'맑은 고딕','Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif}
+#xe{max-width:1010px}
+#hd .hgroup{text-align:;}
+#hd h1 .home{top:px;left:px}
+.xe_mobile{display:none}
+</style><script>
+//<![CDATA[
+var current_url = "https://gigglehd.com/gg/";
+var request_uri = "https://gigglehd.com/gg/";
+var current_mid = "index";
+var waiting_message = "서버에 요청 중입니다. 잠시만 기다려주세요.";
+var ssl_actions = new Array();
+var default_url = "http://gigglehd.com/gg/";
+var enforce_ssl = true;xe.current_lang = "ko";
+xe.cmd_find = "찾기";
+xe.cmd_cancel = "취소";
+xe.cmd_confirm = "확인";
+xe.msg_no_root = "루트는 선택 할 수 없습니다.";
+xe.msg_no_shortcut = "바로가기는 선택 할 수 없습니다.";
+xe.msg_select_menu = "대상 메뉴 선택";
+//]]>
+</script>
+</head>
+<body class="white">
+
+<div id="xe" class="ce ">
+		
+	<div id="hd" class="clear"> <a href="#content" class="skipToContent" onclick="jQuery('#content a:first').focus();return false">Skip to content</a>
+		
+		<ul id="top_mn">
+			
+				  
+			
+			<li class="item">
+				<a href="#site_login" class="tg_btn"><strong>로그인</strong></a>
+				<div id="site_login" class="tg_cnt">
+					<button type="button" class="tg_blur"></button>
+<h2>로그인</h2>
+<form action="./" method="post" ><input type="hidden" name="error_return_url" value="/gg/" /><input type="hidden" name="mid" value="index" /><input type="hidden" name="vid" value="" /><input type="hidden" name="ruleset" value="@login" />
+	<fieldset>
+		<input type="hidden" name="act" value="procMemberLogin" />
+		<input type="hidden" name="success_return_url" value="https://gigglehd.com/gg/" />
+		<div class="itx_area">
+			<span class="itx_wrp">
+				<label for="uid">아이디</label>
+				<input type="text" name="user_id" id="uid" class="itx" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+			</span>
+			<span class="itx_wrp">
+				<label for="upw">비밀번호</label>
+				<input type="password" name="password" id="upw" class="itx" />
+			</span>
+		</div>
+		<div class="btn_area">
+			<span class="keep">
+				<input type="checkbox" name="keep_signed" id="keepid_opt" value="Y" onclick="if(this.checked) return confirm('브라우저를 닫더라도 로그인이 계속 유지될 수 있습니다.\n\n로그인 유지 기능을 사용할 경우 다음 접속부터는 로그인할 필요가 없습니다.\n\n단, 게임방, 학교 등 공공장소에서 이용 시 개인정보가 유출될 수 있으니 꼭 로그아웃을 해주세요.');" />
+				<label for="keepid_opt">로그인 유지</label>
+			</span>
+			<span><input type="submit" value="로그인" class="login_btn" /></span>
+		</div>
+<div>		<br>		</div>
+<div>아이디나 비밀번호 분실 시, 가입할 때 기록한 <br>이메일로 관리자에게 메일 보내 주세요.</div>
+	</fieldset>
+</form>
+<button type="button" class="tg_blur"></button>
+<button type="button" class="tg_close" title="Close this layer">X</button>				</div>
+			</li>			<li class="item">
+								<a href="https://gigglehd.com/gg/index.php?mid=index&amp;act=dispMemberSignUpForm" class="login_btn">가입하기</a>			</li>
+			
+			 
+		</ul>
+		
+		<div class="hgroup ui_font">
+			<h1>
+								<a href="https://gigglehd.com/gg/" class="home" style="position:relative;top:px;left:px"><img class="m_no_inline" src="https://gigglehd.com/gg/files/attach/images/13754/218ea95e6c03e4ac52a9081188af3fd4.jpg" alt="기글하드웨어" /><img src="https://gigglehd.com/gg/files/attach/images/13754/3c63609cc7323c077e07171f4091d2bf.jpg" class="m_yes_inline" alt="기글하드웨어" /></a>
+			</h1>
+		</div>
+		
+		<div id="gnb_wrp" class="clear">
+<div id="site_srch" class="srch" style="width:300px;margin-top:-1px;margin-bottom:-10px;margin-right:10px">
+<script>
+  (function() {
+    var cx = '017046375887519405843:-gpzzigpb_0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+			<!-- GNB -->
+			<ul id="gnb" class="ui_font">
+								<li class="li1">
+					<a class="a1 lightsky"  aria-haspopup="true" >기글하드웨어</a>
+										<button type="button" class="tg_ul2 m_yes_inline"><strong>−</strong><span>+</span></button> 
+					<ul class="ul2">
+						<li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/popular">인기글</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/ggnews">주간 / 국내 뉴스</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/review">리뷰 / 사용기</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/adreview">홍보 / 필테</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/pointrank">포인트 랭킹</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/iconshop">수식어 상점</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/google_search">통합 검색</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/index.php?mid=bbs&amp;category=133023">공지사항</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/report">신고와 건의</a>
+													</li>						<li><button type="button" class="close_ul2 m_yes">닫기</button></li>
+					</ul>
+													</li><li class="li1">
+					<a class="a1 orange"  aria-haspopup="true" >포럼</a>
+										<button type="button" class="tg_ul2 m_yes_inline"><strong>−</strong><span>+</span></button> 
+					<ul class="ul2">
+						<li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/hard">컴퓨터 / 하드웨어</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/mobile">모바일 / 스마트</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/game">게임 / 엔터테인먼트</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/lifetech">가전 / 가젯 / 테크</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/soft">인터넷 / 소프트웨어</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/dica">디카 / 영상</a>
+													</li>						<li><button type="button" class="close_ul2 m_yes">닫기</button></li>
+					</ul>
+													</li><li class="li1">
+					<a class="a1 sky"  aria-haspopup="true" >커뮤니티</a>
+										<button type="button" class="tg_ul2 m_yes_inline"><strong>−</strong><span>+</span></button> 
+					<ul class="ul2">
+						<li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/bbs">커뮤니티 게시판</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/photo">사진 게시판</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/shady">수상한 게시판</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/serious">비공개 게시판</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/giveaway">나눔 게시판</a>
+													</li><li class="li2">
+							<a class="a2" href="https://gigglehd.com/gg/attendance">출석부</a>
+													</li>						<li><button type="button" class="close_ul2 m_yes">닫기</button></li>
+					</ul>
+													</li>			</ul>
+					</div>
+	</div>
+	
+		
+	<div id="container" class="clear">
+		
+				
+		<div id="content" style="max-width:850px"><div id="gap"> <div class="xe-widget-wrapper " style="background-image: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; width: 550px; background-repeat: repeat; background-position: 0% 0%; float: left; height: 520px; background-color: transparent;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe-widget-wrapper " style="BACKGROUND-IMAGE: none; BORDER-BOTTOM: rgb(0,0,0) 0px solid; BORDER-LEFT: rgb(0,0,0) 0px solid; MARGIN: 5px 0px 0px; WIDTH: 100%; BACKGROUND-REPEAT: repeat; BACKGROUND-POSITION: 0% 0%; FLOAT: left; BORDER-TOP: rgb(0,0,0) 0px solid; BORDER-RIGHT: rgb(0,0,0) 0px solid"><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="nw_box">
+        <div>
+        <table cellspacing="0" class="listTable">
+                        <tr valign="top">
+                                                                        <td>
+	            				<a href="https://gigglehd.com/gg/10795967"><img src="https://gigglehd.com/gg/files/thumbnails/157/797/010/0x0.ratio.jpg" border="0" alt="ANC 처음 써본 사람의 간단 버즈2 사용기" /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                        <td>
+	            				<a href="https://gigglehd.com/gg/10798269"><img src="https://gigglehd.com/gg/files/thumbnails/378/798/010/0x0.ratio.jpg" border="0" alt="프로게이머용 모니터는 뭐가 다른가? MSI 오큘러스 NXG..." /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                        <td>
+	            				<a href="https://gigglehd.com/gg/10792372"><img src="https://gigglehd.com/gg/files/thumbnails/419/792/010/0x0.ratio.jpg" border="0" alt="주간뉴스 8/29 - 젠4 내장 그래픽, 970 EVO+ 스펙 변경..." /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                        <td>
+	            				<a href="https://gigglehd.com/gg/10778412"><img src="https://gigglehd.com/gg/files/thumbnails/428/778/010/0x0.ratio.jpg" border="0" alt="35주년 기념 한정판, MSI 황금 용용이 피규어" /></a>
+                </td>
+                                            </tr>
+                </table>
+        </div>
+</div>
+</div></div></div></div></div><div class="xe-widget-wrapper " style="background-image: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px 0px 0px 15px; width: 255px; background-repeat: repeat; background-position: 0% 0%; float: left; height: 520px; background-color: transparent;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="WIDTH: 100%; FLOAT: left"><div style="padding:0px 0px 0px 0px !important;"><a href="https://gigglehd.com/gg/ggnews"><span style="color:#000000;"><span style="font-size: 18px;"><strong>주간/국내뉴스</strong></span></span></a></div></div><div class="xe-widget-wrapper " style="background-image: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 5px 0px 0px; width: 100%; background-repeat: repeat; background-position: 0% 0%; float: left; background-color: transparent;">    <div class="simpleWidgetStyle white">
+    <h2></h2>
+            <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+                <ul class="widgetZineA">
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10801026" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/026/801/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10801026" class="title">성능의 격이 다르다! R...</a>
+ 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            - MSI GP76 Leopard 11UH 출시  - 최신 인텔 11세대 i7-118...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10800945" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/945/800/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10800945" class="title">확장성, RGB 감성 최대...</a>
+ 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            - 넉넉한 내부 공간 및 USB 3.2 C-type 지원해 확장성 최고 ...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10799915" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/915/799/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10799915" class="title">MSI X 인텔 게이머 데...</a>
+ 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            안녕하세요. MSI입니다.   2021년 8월 27일부터 9월 5일까지...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10792372" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/372/792/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10792372" class="title">주간뉴스 8/29 - 젠4 ...</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10792372#comment">1</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            젠4는 전부 내장 그래픽 탑재 AMD는 3D 스택으로 눈을 돌렸...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10783255" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/255/783/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10783255" class="title">세련미와 화려함을 함...</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10783255#comment">1</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            - 전면 LED 패널, ARGB 허브 등 LED 관련 기능 충실 - 최고 ...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10782829" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/829/782/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10782829" class="title">긴급 공수! 오늘 딱 하...</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10782829#comment">1</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            - 11번가 MSI 크리에이터 17 긴급공수 행사 진행 - 트리플 ...                    </p>
+                </li>
+</ul>
+    </div>
+</div></div>
+</div></div></div></div><div class="xe-widget-wrapper " style="background-image: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; width: 100%; background-repeat: repeat; background-position: 0% 0%; float: left; height: 20px; background-color: transparent;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div><div class="xe-widget-wrapper " style="BACKGROUND-IMAGE: none; BORDER-BOTTOM: rgb(0,0,0) 0px solid; BORDER-LEFT: rgb(0,0,0) 0px solid; MARGIN: 0px; WIDTH: 820px; BACKGROUND-REPEAT: repeat; BACKGROUND-POSITION: 0% 0%; FLOAT: left; HEIGHT: 60px; BORDER-TOP: rgb(0,0,0) 0px solid; BORDER-RIGHT: rgb(0,0,0) 0px solid;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe-widget-wrapper " style="WIDTH: 100%; FLOAT: left"><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widget_banner_skin">
+  <ul class="banner_list">
+                                                                                                                                                        <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=13208480&amp;cate=11230049" target="_blank" onclick="bannerClickCount(9491766);"><img src="/gg/files/attach/images/14393/766/491/009/0c82bb7b585e49d9e6c775813dc1632d.jpg" style="width:400px;" /></a></li>
+  
+                                                                                                                                                                          <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=14291423" target="_blank" onclick="bannerClickCount(10400807);"><img src="/gg/files/attach/images/14393/807/400/010/b2adcad950ffb0c177ec39829a722c18.jpg" style="width:400px;" /></a></li>
+  
+                            </ul>
+</div>
+<script>
+function bannerClickCount(banner_srl){
+  var url = "https://gigglehd.com/gg/index.php";
+  jQuery.ajax({
+    type: "POST",
+    url: url,
+    data: "xenara_ajax=y&mid=index&banner_srl="+banner_srl+"&update_type=click_count",
+    success: function(data){
+      return false;
+    }
+  });
+}
+</script>
+</div></div></div></div></div><div class="xe-widget-wrapper " style="background-image: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; width: 100%; background-repeat: repeat; background-position: 0% 0%; float: left; height: 20px; background-color: transparent;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div><div class="xe-widget-wrapper " style="float: left; width: 400px; height: 250px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;"><div style="padding:0px 0px 0px 0px !important;"><a href="https://gigglehd.com/gg/popular"><span style="color:#000000;"><span style="font-size: 18px;"><strong>3일간 인기글</strong></span></span></a></div></div><div class="xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;">    <div class="simpleWidgetStyle white">
+    <h2></h2>
+            <div style="*zoom:1;padding:0px 0px 0px 0px !important;">    <div class="widgetContainer">
+                    <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/lifetech"><strong class="board">가전 / 가젯 / 테크</strong></a>
+                                                <a href="https://gigglehd.com/gg/10786329">내차 깜빡이가 앞차 깜빡이 속도랑 안맞아요...</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786329#comment">24</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/soft"><strong class="board">인터넷 / 소프트웨어</strong></a>
+                                                <a href="https://gigglehd.com/gg/10788740">윈도우 11, 구형 CPU에서 무시하고 설치 가능</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788740#comment">20</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/soft"><strong class="board">인터넷 / 소프트웨어</strong></a>
+                                                <a href="https://gigglehd.com/gg/10788727">라데온 RX 470 8GB 50만개가 채굴업자에게 ...</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788727#comment">12</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/hard"><strong class="board">컴퓨터 / 하드웨어</strong></a>
+                                                <a href="https://gigglehd.com/gg/10791264">지포스 GTX 1060, 5년 동안의 성능 변화는?</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791264#comment">16</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/game"><strong class="board">게임 / 엔터테인먼트</strong></a>
+                                                <a href="https://gigglehd.com/gg/10785978">블리자드, 오버워치의 '맥크리' 이름을 변경</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785978#comment">13</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/hard"><strong class="board">컴퓨터 / 하드웨어</strong></a>
+                                                <a href="https://gigglehd.com/gg/10793730">TSMC 3나노미터 공정 지연된다고 합니다</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793730#comment">10</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/soft"><strong class="board">인터넷 / 소프트웨어</strong></a>
+                                                <a href="https://gigglehd.com/gg/10782654">Apple, 미국 개발자들과 App Store 업데이트...</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10782654#comment">15</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/mobile"><strong class="board">모바일 / 스마트</strong></a>
+                                                <a href="https://gigglehd.com/gg/10787852">루머)엑시노스 신형 A시리즈 탑재용 관련</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787852#comment">12</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/mobile"><strong class="board">모바일 / 스마트</strong></a>
+                                                <a href="https://gigglehd.com/gg/10788582">아이폰13/아이패드 미니6 유출 CAD 기반 렌더</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788582#comment">5</a></sup>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="title">
+                            <a href="https://gigglehd.com/gg/mobile"><strong class="board">모바일 / 스마트</strong></a>
+                                                <a href="https://gigglehd.com/gg/10796829">애플스토어 여의도 굉장히 불만족스러운 후기</a>
+                            <sup class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10796829#comment">27</a></sup>
+                                            </td>
+                </tr>
+                </tbody>
+    </table>
+        </div>
+</div></div>
+</div></div></div></div><div class="xe-widget-wrapper " style="float: left; width: 400px; height: 250px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px 0px 0px 15px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;"><div style="padding:0px 0px 0px 0px !important;"><a href="https://gigglehd.com/gg/review"><span style="color:#000000;"><span style="font-size: 18px;"><strong>리뷰/사용기</strong></span></span></a></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;margin:none;padding:none;">    <div class="simpleWidgetStyle white">
+    <h2></h2>
+            <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+                <ul class="widgetZineA">
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10798269" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/269/798/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10798269" class="title">프로게이머용 모니터는 뭐가 다른가? MSI 오큘...</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10798269#comment">2</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            모니터의 리프레시율을 높이면 무슨 일이 생길까요? 우선, 화면이 더욱 부드럽게 표시됩니다. 그리고 이 모니터...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10791772" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/772/791/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10791772" class="title">Galaxy Z Fold3 사용기</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791772#comment">22</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+            0. 들어가기 전에... 이 리뷰는 작성자의 주관적인 견해가 들어가 있습니다. 이 글을 읽고 제 의견에 공감하시는 ...                    </p>
+                </li>
+    <li>
+        <p class="thumbArea" style="width:50px;margin-right:-50px;">
+            <a href="https://gigglehd.com/gg/10785339" class="thumb" style="width:50px;height:50px">
+                                    <img src="https://gigglehd.com/gg/files/thumbnails/339/785/010/50x50.crop.jpg" style="width:50px;height:50px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:70px;">
+                        <a href="https://gigglehd.com/gg/10785339" class="title">Netgear Aircard 800S 모바일 핫스팟</a>
+ 
+                           <span class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785339#comment">4</a></span> 
+                                        <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </p>
+                                        <p class="text" style="margin-left:70px;">
+              이 제품은 호주 통신사 OPTUS의 것을 언락하여 파는 것으로 추정됩니다.(물론 알리에서 샀죠)   특징은 다음과...                    </p>
+                </li>
+</ul>
+    </div>
+</div></div>
+</div></div></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;height:20px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div><div class="xe-widget-wrapper " style="float: left; width: 100%; height: 380px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="float: left; width: 100%; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px 0px 10px; background-image: none; background-repeat: repeat; background-position: 0% 0%;"><div style="padding:0px 0px 0px 0px !important;"><span style="font-size:18px;"><strong>포럼 최신글</strong></span></div></div><div class="xe-widget-wrapper " style="float: left; width: 50%; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;"><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            <ul class="widgetTabA widgetTab">
+    <li class="active"><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),0,0,0)">컴퓨터 / 하드웨어</span> <a href="https://gigglehd.com/gg/hard">+</a></li>
+    <li><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),1,0,0)">게임 / 엔터테인먼트</span> <a href="https://gigglehd.com/gg/game">+</a></li>
+    <li><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),2,0,0)">인터넷 / 소프트웨어</span> <a href="https://gigglehd.com/gg/soft">+</a></li>
+</ul>
+<dl class="widgetDivider">
+    <dt>컴퓨터 / 하드웨어</dt>
+    <dd class="open">
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13777"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10800909">TSMC 5나노 수율 별로인가 봅니다.</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800909#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10795924">인텔 알더레이크의 발열/전력 테스트</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10795924#comment">5</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10795914">NVIDIA 러브에이스 GPU, TSMC N5 공정으로 제조?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10795914#comment">3</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13778"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10794347">3200 cl16 vs 3600 cl26</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10794347#comment">16</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10793730">TSMC 3나노미터 공정 지연된다고 합니다</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793730#comment">10</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13778"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10793523">램타이밍을 Auto로 놔도 멤테 통과실패</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793523#comment">11</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791264">지포스 GTX 1060, 5년 동안의 성능 변화는?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791264#comment">16</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791056">애즈락 AMD 라데온 RX 6600 XT 챌린저 ITX 8GB 그래픽카드</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791056#comment">5</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791052">AMD X570S 시리즈 메인보드가 9월 3일에 출시?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791052#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791020">프랙탈 디자인, 토렌트 시리즈 케이스의 팬 허브를 교체</a>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791009">다음달 지포스 RTX 3060 Ti/3060의 공급이 감소</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791009#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13778"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10790291">미묘한 상황이 발견되어서 골치입니다..(도와주세요!)</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10790291#comment">8</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13778"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10786215">안드로이드 셋탑은 보통 어디에 사용하나요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786215#comment">6</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786183">2021년 MCU 매출이 역대 최고치를 갱신할 예정</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786183#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=hard&amp;category=13779"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786039">베스트바이에 지포스 RTX 30 시리즈 17,000개가 입고됐...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786039#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+    <dt>게임 / 엔터테인먼트</dt>
+    <dd>
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10799957">배틀필드 5, 90%할인</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799957#comment">5</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14126"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10799311">[코노스바-모바일] 바캉스 Part 2</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799311#comment">3</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14126"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10795689">Miku land 2021 찍먹 후기</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10795689#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14126"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10793220">[워썬더] 소뽕에서 독뽕으로 넘어간 게임</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793220#comment">16</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791100">밸브, 차세대 스팀 덱과 4K도 생각 중</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791100#comment">4</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791079">헤일로 인피니트의 요구 스펙</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10785978">블리자드, 오버워치의 '맥크리' 이름을 변경</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785978#comment">13</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10785358">헤일로 Xbox 시리즈 X, 엘리트 시리즈 2 컨트롤러</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785358#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10785163">넷플릭스 게임 시험 서비스 돌입</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785163#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14127"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10783265">배틀플릿 고딕 아르마다 2가 자꾸 꺼집니다.</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10783265#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10782735">엔씨 주가가 폭락하는 중에 나온 블소2 공지</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10782735#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10779215">[에픽 무료 게임] Automachef</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10779215#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14126"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10778095">프리코네 클랜원을 모집했었는데요...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10778095#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14128"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10777545">[GoG] 32개 무료 게임 컬렉션</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10777545#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=game&amp;category=14130"><strong class="category">분석</strong></a>
+                        <a href="https://gigglehd.com/gg/10774528">Playdate 분해 사진</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10774528#comment">11</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+    <dt>인터넷 / 소프트웨어</dt>
+    <dd>
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14122"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10800509">macOS는 어떠한 방식으로 태그와 파일 설명을 제공하나요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800509#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14122"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10795398">프로그램 메뉴 이미지 깨짐 현상</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10795398#comment">5</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14122"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10793786">[해결]마크 서버 컨테이너를 외부에서 접속하려면 어떻...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793786#comment">13</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10788740">윈도우 11, 구형 CPU에서 무시하고 설치 가능</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788740#comment">20</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10788727">라데온 RX 470 8GB 50만개가 채굴업자에게 반환될 예정</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788727#comment">12</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14122"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10787846">구글 오더폼 전문가 계신가요 ㅠㅠ</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787846#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786158">구글, 기본 검색 엔진을 유지하기 위해 애플에 150억 ...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786158#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786144">애플이 미국 개발자들과 1억 달러에 합의</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10785774">중국의 채굴 제한 이후 비트코인 해시레이트가 반등세</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785774#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10784838">10대의 암호화폐 탈취 범행 때문에 부모가 고소 당해</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10784838#comment">3</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10783850">머지포인트 결국 무기한 환불 중단</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10783850#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10782654">Apple, 미국 개발자들과 App Store 업데이트에 관해 합...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10782654#comment">15</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10779224">3D마크, 샘플러 피드백 피처 테스트 추가</a>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14123"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10774466">치아코인의 현 상황</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10774466#comment">8</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=soft&amp;category=14122"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10773074">파티션 숨김 기능이 다른 PC에서 동작하질 않네요...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10773074#comment">8</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+</dl>
+    </div>
+</div></div><div class="xe-widget-wrapper " style="float: left; width: 50%; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;"><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+            <ul class="widgetTabA widgetTab">
+    <li class="active"><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),0,0,0)">모바일 / 스마트</span> <a href="https://gigglehd.com/gg/mobile">+</a></li>
+    <li><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),1,0,0)">가전 / 가젯 / 테크</span> <a href="https://gigglehd.com/gg/lifetech">+</a></li>
+    <li><span onmouseover="content_widget_tab_show(jQuery(this),jQuery(this).parents('ul.widgetTabA').next('dl.widgetDivider'),2,0,0)">디카 / 영상</span> <a href="https://gigglehd.com/gg/dica">+</a></li>
+</ul>
+<dl class="widgetDivider">
+    <dt>모바일 / 스마트</dt>
+    <dd class="open">
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10800451">모토로라, 한국 시장 10년 만에 복귀 채비.. 5G폰 전파...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800451#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10799321">[루머] 아이폰13 위성통신 지원 가능성..?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799321#comment">14</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14111"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10796829">애플스토어 여의도 굉장히 불만족스러운 후기</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10796829#comment">27</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10796383">LG전자 일부 스마트폰 통화 불가 이슈(G7/v35/v40)</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10796383#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10794533">루머) 아이폰13 프로, 256GB 옵션 제거하고 1TB 추가?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10794533#comment">19</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14111"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10793827">폴드3/플립3/버즈2 구경하고 온 후기 (사진X)</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10793827#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791237">사운드가 나오지 않는 문제에 대한 iPhone 12 및 iPhon...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791237#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791138">아너 워치 GS3의 마케팅 이미지 공개</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791138#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791085">구글 픽셀 5a 광고 등장. 3.5mm 헤드폰 잭 강조</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791085#comment">3</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10788582">아이폰13/아이패드 미니6 유출 CAD 기반 렌더</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788582#comment">5</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10788064">애플의 차세대 코어 코드네임</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10788064#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10787852">루머)엑시노스 신형 A시리즈 탑재용 관련</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787852#comment">12</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10787154">모토로라 모토 G50 5G, 국내 전파인증 통과</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787154#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786173">구글 픽셀 6, 삼성 mmWave 5G 모뎀을 사용</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786173#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=mobile&amp;category=14113"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786168">구글 픽셀 5a 5G의 분해 영상</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+    <dt>가전 / 가젯 / 테크</dt>
+    <dd>
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10797308">asus 주식도 투자가 가능한가요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797308#comment">3</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14119"><strong class="category">테스트</strong></a>
+                        <a href="https://gigglehd.com/gg/10795967">ANC 처음 써본 사람의 간단 버즈2 사용기</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10795967#comment">16</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10794438">모션 데스크 구매시 참고하거나 알아볼게 있을까요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10794438#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14116"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10792135">실수로 기기초기화를 했습니다. 특정한 파일형식을 복...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10792135#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14120"><strong class="category">분석</strong></a>
+                        <a href="https://gigglehd.com/gg/10786329">내차 깜빡이가 앞차 깜빡이 속도랑 안맞아요. 왜그럴까요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786329#comment">24</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10785784">유플러스 우리집 AI 스피커 연결이 안돼요</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10785784#comment">7</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14118"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10784671">제임스 웹 망원경, 테스트 다 마쳐</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10784671#comment">12</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10784329">에어팟 배터리 수명을 확인할 방법이 있을까요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10784329#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10775212">공유기 교체 후 크롬캐스트 사용 불가(next8004n, BTV)</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10775212#comment">10</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10769616">블루투스 스피커의 출력과 관련하여</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10769616#comment">2</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10765012">KT 셋톱박스 중에 구글홈과 연동되는 기기가 있나요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10765012#comment">4</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14117"><strong class="category">질문</strong></a>
+                        <a href="https://gigglehd.com/gg/10757862">책상 사이즈 주문제작 가능한 곳이 있을까요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10757862#comment">14</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14116"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10754154">KODI 라는 걸 써봤습니다 (라즈베리 제로 OSMC 설치)</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10754154#comment">26</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14116"><strong class="category">일반</strong></a>
+                        <a href="https://gigglehd.com/gg/10747849">노트 20 최대 충전 전력이 27w까지 가는군요</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10747849#comment">3</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=lifetech&amp;category=14120"><strong class="category">분석</strong></a>
+                        <a href="https://gigglehd.com/gg/10747406">QCY T13 TWS 무선 이어폰 분해 사진</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10747406#comment">4</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+    <dt>디카 / 영상</dt>
+    <dd>
+                        <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791211">고프로 히어로 10 블랙의 이미지와 스펙 유출</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791211#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791127">OMDS가 2022년에 40-150mm F4를 발표?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791117">후지필름 X-T30 II는 마이너 체인지 모델?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10791103">자이스, 10월 1일부터 렌즈 가격 인상?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10791103#comment">1</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786140">소니 a7 IV에 신형 3300만 화소 센서 탑재?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10786140#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786136">후지필름 X-H2가 8K 지원 신형 센서를 사용?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786131">후지필름 X 서밋 프라임 2021이 9월 2일에 개최</a>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10786125">시그마 90mm F2.8 DG DN Contemporary의 스펙</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10785181">시그마가 90mm F2.8과 24mm F2 렌즈를 곧 발표?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10773010">탐론 18-300mm F/3.5-6.3 Di III-A VC VXD는 699달러?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10773010#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10773003">후지필름 GF 35-70mm F4.5-5.6은 999달러?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10772999">캐논 EOS R3이 9월 14일에 발표?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10772999#comment">1</a></em>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10758472">탐론 18-300mm F/3.5-6.3 Di III-A VC VXD (Model B061...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10758472#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10746873">캐논 EOS R5에서 멀티 액세서리 슈 업그레이드가 가능?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10746873#comment">2</a></em>
+                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                    </td>
+                </tr>
+                <tr>
+                <td class="title">
+                                        <a href="https://gigglehd.com/gg/index.php?mid=dica&amp;category=58763"><strong class="category">소식</strong></a>
+                        <a href="https://gigglehd.com/gg/10746867">후지필름 GF 35-70mm F4.5-5.6는 방진 방적?</a>
+                                                    <span class="icon"></span>
+                    </td>
+                </tr>
+                </tbody>
+    </table>
+        </dd>
+</dl>
+    </div>
+</div></div></div></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;height:20px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div><div class="xe-widget-wrapper " style="float: left; width: 820px; height: 60px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe-widget-wrapper " style="float:left;width:100%;margin:none;padding:none;"><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widget_banner_skin">
+  <ul class="banner_list">
+                                                                                                                                                        <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=14329214" target="_blank" onclick="bannerClickCount(10453614);"><img src="/gg/files/attach/images/14395/614/453/010/78bf043a4c616401e02876567f4766c4.png" /></a></li>
+  
+                                                                                                                                                                          <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=14292182" target="_blank" onclick="bannerClickCount(10416560);"><img src="/gg/files/attach/images/14395/560/416/010/aef2960a0c09d236ebc20ff3a9fb4da9.jpg" /></a></li>
+  
+                            </ul>
+</div>
+</div></div></div></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;height:20px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div><div class="xe-widget-wrapper " style="float: left; width: 305px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;"><div style="padding:0px 0px 0px 0px !important;"><a href="https://gigglehd.com/gg/bbs"><span style="color:#000000;"><span style="font-size: 18px;"><strong>커뮤니티</strong></span></span></a></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;margin:none;padding:none;">    <div class="simpleWidgetStyle white">
+    <h2></h2>
+            <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+                    <table class="widgetTableA" border="1" cellspacing="0">
+        <tbody>
+                <tr>
+                <td class="time"><span class="hour">15:21</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10801055">아스트라제네카 맞고 5분 경과</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10801055#comment">2</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">14:55</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800850">편하고 좋읍니다.</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800850#comment">6</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">14:52</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800814">배틀필드5를 질렀는데 말이죠</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800814#comment">3</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">14:29</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800721">개강하니까 탭S7이 용도를 찾았읍니다</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800721#comment">1</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">14:24</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800672">اللّٰهُ أَكْبَر‎ </a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800672#comment">8</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">13:30</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800371">엔비디아 멸ㅋㅋㅋ망ㅋㅋㅋ</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800371#comment">13</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">13:01</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800220">코로나 예방접종 하러 왔습니다</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800220#comment">2</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">12:47</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800095">갤럭시 투고폰을 파는 분도 있군요</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10800095#comment">15</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">12:35</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800037">사운드블라스터 Audigy FX 판매합니다</a>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">12:32</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10800018">버거킹 신제품 앵그리 너겟킹 8조각...</a>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">12:12</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10799910">XSX 올엑세스 성공했습니다</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799910#comment">5</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">11:16</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10799613">5차 재난지원금 신청일자가 나왔군요</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799613#comment">5</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">10:55</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10799516">린져씨식 통제</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799516#comment">8</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">10:03</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10799220">이북 리더기, 레이싱 휠 팝니다.</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10799220#comment">7</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">09:21</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10798944">이래서 장난감 총은 사면 안 되는 ...</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10798944#comment">41</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">00:27</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10797731">그램 360 16+클립스튜디오 소감</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797731#comment">7</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">23:48</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10797492">수건자연발생설</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797492#comment">20</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">23:34</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10797455">[3차 인하] 펜티엄K + B85 보드를 ...</a>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">23:19</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10797298">몰디브 라떼</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797298#comment">8</a></em>
+                                            </td>
+                </tr>
+                <tr>
+                <td class="time"><span class="hour">23:12</span></td>
+                    <td class="title">
+                                    <a href="https://gigglehd.com/gg/10797119">다들 유비키 받으셨나요?</a>
+                            <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797119#comment">13</a></em>
+                                            </td>
+                </tr>
+                </tbody>
+    </table>
+        </div>
+</div></div>
+</div></div></div></div><div class="xe-widget-wrapper " style="float: right; width: 500px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); margin: 0px; background-image: none; background-repeat: repeat; background-position: 0% 0%;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div><div class="xe_content xe-widget-wrapper " style="float:left;padding:none;margin:none;width:100%;"><div style="padding:0px 0px 0px 0px !important;"><a href="https://gigglehd.com/gg/photo"><span style="color:#000000;"><span style="font-size: 18px;"><strong>사진 게시판</strong></span></span></a></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;margin:none;padding:none;">    <div class="simpleWidgetStyle white">
+    <h2></h2>
+            <div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widgetContainer">
+                <ul class="widgetGalleryA" style="width:519px;">
+        <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10797874" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/874/797/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10797874" class="title">폴드 2, 3</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10797874#comment">5</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/new.gif" alt="new" title="new" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10794136" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/136/794/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10794136" class="title">도미노 스파게티 ...</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10794136#comment">14</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10792941" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/941/792/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10792941" class="title">그간의 신발 지름(3)</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10792941#comment">10</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li class="clearLeft" style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10792635" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/635/792/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10792635" class="title">편안한 마음으로 ...</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10792635#comment">3</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10790321" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/321/790/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10790321" class="title">중국집, 인도집</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10790321#comment">13</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/update.gif" alt="update" title="update" style="margin-right:2px;" /><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10789480" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/480/789/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10789480" class="title">내호냉면</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10789480#comment">4</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li class="clearLeft" style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10787597" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/597/787/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10787597" class="title">새우라면 먹고왔습...</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787597#comment">8</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10787128" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/128/787/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10787128" class="title">누나의 에어프라이...</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10787128#comment">21</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+            <li style="width:145px;">
+                                    <a href="https://gigglehd.com/gg/10777280" class="thumb" style="width:145px;height:95px">
+                                            <img src="https://gigglehd.com/gg/files/thumbnails/280/777/010/145x95.crop.jpg" style="width:145px;height:95px"/>
+                                                                    </a>
+                                            <a href="https://gigglehd.com/gg/10777280" class="title">MSI 장패드 수령</a>
+                                    <em class="replyNum" title="Replies"><a href="https://gigglehd.com/gg/10777280#comment">14</a></em>
+                                                                    <span class="icon"><img src="https://gigglehd.com/gg/modules/document/tpl/icons/file.gif" alt="file" title="file" style="margin-right:2px;" /></span>
+                                </li>
+        </ul>
+    </div>
+</div></div>
+</div></div></div></div><div class="xe-widget-wrapper " style="float:left;width:100%;height:20px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"><div style="padding:0px 0px 0px 0px !important;"><div></div></div></div> </div></div>
+		
+		<div id="aside">
+			</div> 
+			
+<!-- 최근 리플 위젯 -->
+<div class="section">
+<div style="margin: 5px 0px 5px 0px;"><b>최근 코멘트 30개</b></div>
+<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="mhcomm_normal">
+   <div class="pic">
+					<div class="name"><b>야메떼</b></div>
+			<div class="date">15:24</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10799957#comment_10801081">못배운 사람들은 5...</a></div>
+					<div class="name"><b>배신앙앙</b></div>
+			<div class="date">15:22</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10801055#comment_10801069">회사복귀중입니다....</a></div>
+					<div class="name"><b>설섭크</b></div>
+			<div class="date">15:22</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800909#comment_10801063">TSMC 수율 걱정하...</a></div>
+					<div class="name"><b>하뉴</b></div>
+			<div class="date">15:21</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10801055#comment_10801059">오늘은 쉴수 있어...</a></div>
+					<div class="name"><b>고자되기</b></div>
+			<div class="date">15:19</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800909#comment_10801047">평소에 삼전 투자...</a></div>
+					<div class="name"><b>Retribute</b></div>
+			<div class="date">15:18</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10801017">요즘 10만원 언더...</a></div>
+					<div class="name"><b>Retribute</b></div>
+			<div class="date">15:17</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10801012">버즈 프로랑 버즈2...</a></div>
+					<div class="name"><b>DemonicBKN</b></div>
+			<div class="date">15:16</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800909#comment_10800997">왜이렇게 화가 나...</a></div>
+					<div class="name"><b>히토히라</b></div>
+			<div class="date">15:15</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10800990">흑흑... 돈 없는 ...</a></div>
+					<div class="name"><b>북해도감자</b></div>
+			<div class="date">15:15</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800095#comment_10800985">(대충 사고방식 자...</a></div>
+					<div class="name"><b>야메떼</b></div>
+			<div class="date">15:14</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10800977">버플이라 슬픕니다.</a></div>
+					<div class="name"><b>늘보</b></div>
+			<div class="date">15:14</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800909#comment_10800972">논문가져와봐 니가...</a></div>
+					<div class="name"><b>맥주쥐</b></div>
+			<div class="date">15:11</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800371#comment_10800950">타반꿀 노려봅니다...</a></div>
+					<div class="name"><b>TundraMC</b></div>
+			<div class="date">15:08</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800814#comment_10800929">쇼샤만있다면갓겜...</a></div>
+					<div class="name"><b>Freud</b></div>
+			<div class="date">15:04</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800814#comment_10800913">???: 카드가 했다...</a></div>
+					<div class="name"><b>Induky</b></div>
+			<div class="date">15:02</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10795606#comment_10800896">너무 대놓고 복붙 ...</a></div>
+					<div class="name"><b>포인</b></div>
+			<div class="date">15:00</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800814#comment_10800888">유사배필 할바엔 ...</a></div>
+					<div class="name"><b>Retribute</b></div>
+			<div class="date">14:57</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10800875">그렇읍니다... 삼...</a></div>
+					<div class="name"><b>낄낄</b></div>
+			<div class="date">14:56</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10799321#comment_10800872">새로운 시도는 언...</a></div>
+					<div class="name"><b>TundraMC</b></div>
+			<div class="date">14:56</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800850#comment_10800868">공식앱이 나옸나보...</a></div>
+					<div class="name"><b>낄낄</b></div>
+			<div class="date">14:55</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800451#comment_10800863">모토로라 폰은 해...</a></div>
+					<div class="name"><b>FactCore</b></div>
+			<div class="date">14:53</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800672#comment_10800852">다행스럽게도 뻥궁...</a></div>
+					<div class="name"><b>급식단</b></div>
+			<div class="date">14:52</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800451#comment_10800842">엘지의 파이를 노...</a></div>
+					<div class="name"><b>센트레아</b></div>
+			<div class="date">14:49</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10799321#comment_10800830">그 녀석은 위성이 ...</a></div>
+					<div class="name"><b>포인</b></div>
+			<div class="date">14:42</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800672#comment_10800803">아뇨,신의 은총입...</a></div>
+					<div class="name"><b>늘보</b></div>
+			<div class="date">14:37</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10793730#comment_10800787">반도체 회사한테 ...</a></div>
+					<div class="name"><b>포인트 팡팡!</b></div>
+			<div class="date">14:34</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800672#comment_10800776">라푸아님 축하합니...</a></div>
+					<div class="name"><b>라푸아</b></div>
+			<div class="date">14:34</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800672#comment_10800772">이게 그 IED인가 ...</a></div>
+					<div class="name"><b>360ghz</b></div>
+			<div class="date">14:34</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10800721#comment_10800762">전공서적 전부 구...</a></div>
+					<div class="name"><b>Induky</b></div>
+			<div class="date">14:33</div>
+			<div style="clear:both; padding:1px 0 5px 0;" class="comenlink">
+			<a href="https://gigglehd.com/gg/10799957#comment_10800757">교육 받지 못하여 ...</a></div>
+		   </div>
+</div>
+</div></div>
+<br>
+</div>
+<!-- 비공개 3종 셋트 -->
+<div class="section">
+<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="widget_banner_skin">
+  <ul class="banner_list">
+                                                                                                                                                        <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=13790423" target="_blank" onclick="bannerClickCount(10417821);"><img src="/gg/files/attach/images/14360/821/417/010/bea5e61168782a5e6cd1e45421fede94.png" style="width:160px;height:200px;" /></a></li>
+  
+                                                                                                                                                                          <li class="list_output_list list"><a class="link" href="http://prod.danawa.com/info/?pcode=14292182" target="_blank" onclick="bannerClickCount(10176978);"><img src="/gg/files/attach/images/14360/978/176/010/2990f8255a29b37c0476b50116a7afc6.gif" style="width:160px;height:200px;" /></a></li>
+  
+                            </ul>
+</div>
+</div></div>
+</div>
+<div class="section">
+<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="nw_box">
+        <div>
+        <table cellspacing="0" class="listTable">
+                        <tr valign="top">
+                                                                        <td>
+	            				<a href="http://brand.danawa.com/hyun" target="_blank"><img src="https://gigglehd.com/gg/files/thumbnails/880/174/010/160x40.crop.jpg" border="0" alt="현아이디어" /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                        <td>
+	            				<a href="https://www.amd.com/ko" target="_blank"><img src="https://gigglehd.com/gg/files/thumbnails/665/355/009/160x40.crop.jpg" border="0" alt="AMD" /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                        <td>
+	            				<a href="http://kr.msi.com/" target="_blank"><img src="https://gigglehd.com/gg/files/thumbnails/743/101/006/160x40.crop.jpg" border="0" alt="MSI 코리아" /></a>
+                </td>
+                                            </tr>
+                <tr valign="top">
+                                                                                        </tr>
+                <tr valign="top">
+                                                                                        </tr>
+                <tr valign="top">
+                                                                                        </tr>
+                </table>
+        </div>
+</div>
+</div></div>
+</div>
+<div class="section">
+<div class="xe-widget-wrapper " style=""><div style="*zoom:1;padding:0px 0px 0px 0px !important;"><div class="nw_box">
+        <div>
+        <table cellspacing="0" class="listTable">
+                        <tr valign="top">
+                                                                                        </tr>
+                </table>
+        </div>
+</div>
+</div></div>
+</div>
+	
+	<div id="ft" class="ui_font clear">
+		
+				<p id="address"><span style="COLOR: #000000"><a href="https://gigglehd.com/gg/index.php?mid=bbs&category=133023"><span style="COLOR: #000000">공지사항</span></a><span style="COLOR: #000000">        </span></span><span style="COLOR: #000000"><a href="https://gigglehd.com/gg/133042"><span style="COLOR: #000000">사이트 약관</span></a><span style="COLOR: #000000">        </span></span><span style="COLOR: #000000"><a href="https://gigglehd.com/gg/133041"><strong><span style="COLOR: #000000">개인정보취급방침</span></strong></a>       <span style="COLOR: #000000"></span></span><span style="COLOR: #000000"><a href="https://gigglehd.com/gg/report"><span style="COLOR: #000000">신고와 건의</span></a></span></p>	 	<p id="maker"><div align="center">
+<br /> 기글하드웨어는 2006년 6월 28일에 개설된 컴퓨터, 하드웨어, 모바일, 스마트폰, 게임, 소프트웨어, 디지털 카메라 관련 뉴스와 정보, 사용기를 공유하는 커뮤니티 사이트입니다.<br />개인 정보 보호, 개인 및 단체의 권리 침해, 사이트 운영, 관리, 제휴와 광고 관련 문의는 이메일로 보내주세요. <img alt="관리자 이메일" align="middle" src="https://gigglehd.com/images/mail.gif" />
+</div></p>
+	</div>
+</div>
+<div style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#">
+<img src="/gg/layouts/sketchbook5/home/hosting_users/storyhold0/www/gg/layouts/sketchbook5/img/top.png" title="위로 가기"></a>
+</div>
+<div style="position:absolute;top:-999px;left:-999px;visibility:hidden;font-size:72px">
+	<p id="fontcheck_ng1" style="float:left;font-family:'나눔고딕',NanumGothic,monospace,Verdana !important">sketchbook5, 스케치북5</p>
+	<p id="fontcheck_ng2" style="float:left;font-family:monospace,Verdana !important">sketchbook5, 스케치북5</p>
+</div>
+<div id="install_ng"><button type="button" class="tg_blur"></button><button class="tg_close">X</button>
+	<h3>나눔글꼴 설치 안내</h3><br>
+	<h4>이 PC에는 <b>나눔글꼴</b>이 설치되어 있지 않습니다.</h4>
+	<p>이 사이트를 <b>나눔글꼴</b>로 보기 위해서는<br><b>나눔글꼴</b>을 설치해야 합니다.</p>
+	<a class="do" href="http://hangeul.naver.com" target="_blank">설치</a>
+	<a class="cancle close" href="#">취소</a><button type="button" class="tg_blur"></button>
+</div><script type="text/javascript">
+jQuery(function($){
+	$('#fakeM0').click(function(){
+		$.cookie('fakeM',true)
+	});
+	$('#fakeM1').click(function(){
+		$.cookie('fakeM',null)
+	});
+});
+</script><!-- ETC -->
+<div class="wfsr"></div>
+<script src="/gg/addons/autolink/autolink.js?20170415012128"></script><script src="/gg/layouts/sketchbook5/js/layout.js?20170415012143"></script><script src="/gg/files/cache/js_filter_compiled/15f32565dc96bb471f0a9c47e375bd59.ko.compiled.js?20190510124220"></script><script src="/gg/files/cache/ruleset/b04aae013912b9fe9694fb9e4f9d0164.ko.js?20200511122847"></script></body>
+</html>

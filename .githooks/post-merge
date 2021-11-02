@@ -1,0 +1,4 @@
+#!/bin/bash
+
+tuist generate -p ./LinkMoa
+echo 'tuist generate excuted!'

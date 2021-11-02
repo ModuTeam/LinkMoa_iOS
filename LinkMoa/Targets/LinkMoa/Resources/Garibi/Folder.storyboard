@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PAk-ck-Uhc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Folder View Controller-->
+        <scene sceneID="hkZ-67-5ii">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PAk-ck-Uhc" customClass="FolderViewController" customModule="LinkMoa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B0Z-ky-O6a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pbt-hA-y3X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="FAO-tA-5v9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-h6-oFj">
+                                <rect key="frame" x="95" y="391.5" width="224" height="123.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seeshelCharacter" translatesAutoresizingMaskIntoConstraints="NO" id="JfN-GY-e57">
+                                        <rect key="frame" x="62" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1rz-TR-3rJ"/>
+                                            <constraint firstAttribute="width" constant="100" id="oK0-nS-GGF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 아무것도 저장하지 않았어요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcA-LH-wVP">
+                                        <rect key="frame" x="0.0" y="100" width="224" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="16"/>
+                                        <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JXS-da-4kb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pbt-hA-y3X" firstAttribute="leading" secondItem="JXS-da-4kb" secondAttribute="leading" id="3Tn-dl-a2d"/>
+                            <constraint firstItem="EIP-h6-oFj" firstAttribute="centerY" secondItem="JXS-da-4kb" secondAttribute="centerY" id="8H2-LW-dZL"/>
+                            <constraint firstItem="JXS-da-4kb" firstAttribute="trailing" secondItem="pbt-hA-y3X" secondAttribute="trailing" id="Epo-nx-YVa"/>
+                            <constraint firstItem="EIP-h6-oFj" firstAttribute="centerX" secondItem="JXS-da-4kb" secondAttribute="centerX" id="Xua-Yf-y8y"/>
+                            <constraint firstItem="pbt-hA-y3X" firstAttribute="top" secondItem="JXS-da-4kb" secondAttribute="top" id="lcd-PG-Y0h"/>
+                            <constraint firstItem="pbt-hA-y3X" firstAttribute="bottom" secondItem="B0Z-ky-O6a" secondAttribute="bottom" id="ysx-NG-nch"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="folderCollectionView" destination="pbt-hA-y3X" id="fMl-Ot-32s"/>
+                        <outlet property="notificationStackView" destination="EIP-h6-oFj" id="WQB-Dz-LCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBX-qd-XIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="seeshelCharacter" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

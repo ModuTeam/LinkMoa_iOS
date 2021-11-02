@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FolderHeaderView" customModule="LinkMoa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6개의 폴더" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qou-tq-DqM">
+                    <rect key="frame" x="3" y="108" width="63.5" height="1"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <color key="textColor" red="0.18823529411764706" green="0.20000000000000001" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생성 순" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-gU-jGJ">
+                    <rect key="frame" x="256" y="108" width="43" height="21"/>
+                    <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="14"/>
+                    <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomArrowWithLine" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-c2-Sc5">
+                    <rect key="frame" x="300" y="96.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="loR-bd-NK7"/>
+                        <constraint firstAttribute="height" constant="20" id="t0n-pt-nKU"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-N4-CPy">
+                    <rect key="frame" x="250" y="96" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="b9m-7y-Ihf"/>
+                        <constraint firstAttribute="width" constant="70" id="fum-r6-Ebu"/>
+                    </constraints>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p15-Ke-NcN">
+                    <rect key="frame" x="13" y="20" width="291" height="53"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-bK-9Db">
+                            <rect key="frame" x="16" y="17" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="19" id="Hn2-Uo-w3g"/>
+                                <constraint firstAttribute="height" constant="19" id="eso-Pe-cQK"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 링크달을 조회하세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zh6-bq-qLv">
+                            <rect key="frame" x="45" y="16" width="236" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="zh6-bq-qLv" firstAttribute="centerY" secondItem="p15-Ke-NcN" secondAttribute="centerY" id="2VO-3j-566"/>
+                        <constraint firstItem="W2t-bK-9Db" firstAttribute="centerY" secondItem="p15-Ke-NcN" secondAttribute="centerY" id="7jw-hQ-u4K"/>
+                        <constraint firstAttribute="trailing" secondItem="zh6-bq-qLv" secondAttribute="trailing" constant="10" id="KB2-pE-DtX"/>
+                        <constraint firstItem="zh6-bq-qLv" firstAttribute="leading" secondItem="W2t-bK-9Db" secondAttribute="trailing" constant="10" id="bkU-T1-1jY"/>
+                        <constraint firstItem="W2t-bK-9Db" firstAttribute="leading" secondItem="p15-Ke-NcN" secondAttribute="leading" constant="16" id="pY7-XC-93m"/>
+                        <constraint firstAttribute="height" constant="53" id="ubX-2e-Ro6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vzz-N4-CPy" firstAttribute="centerY" secondItem="qou-tq-DqM" secondAttribute="centerY" id="DVG-EQ-3oS"/>
+                <constraint firstAttribute="trailing" secondItem="dHS-c2-Sc5" secondAttribute="trailing" id="MLr-0k-hW8"/>
+                <constraint firstAttribute="trailing" secondItem="p15-Ke-NcN" secondAttribute="trailing" constant="16" id="Rgl-E3-0cr"/>
+                <constraint firstItem="p15-Ke-NcN" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="20" id="Wjh-Q7-0HV"/>
+                <constraint firstItem="dHS-c2-Sc5" firstAttribute="centerY" secondItem="vzz-N4-CPy" secondAttribute="centerY" multiplier="0.98" id="YAV-3d-zqP"/>
+                <constraint firstAttribute="bottom" secondItem="qou-tq-DqM" secondAttribute="bottom" constant="30" id="Ysy-Fh-44E"/>
+                <constraint firstItem="dHS-c2-Sc5" firstAttribute="leading" secondItem="cT2-gU-jGJ" secondAttribute="trailing" constant="1" id="ZaQ-aY-98m"/>
+                <constraint firstAttribute="trailing" secondItem="vzz-N4-CPy" secondAttribute="trailing" id="ajt-Mb-f1f"/>
+                <constraint firstItem="qou-tq-DqM" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="3" id="b5j-9m-eHI"/>
+                <constraint firstItem="qou-tq-DqM" firstAttribute="top" secondItem="p15-Ke-NcN" secondAttribute="bottom" constant="35" id="cpJ-4y-exo"/>
+                <constraint firstItem="p15-Ke-NcN" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="13" id="dbl-l7-jgl"/>
+                <constraint firstItem="cT2-gU-jGJ" firstAttribute="top" secondItem="p15-Ke-NcN" secondAttribute="bottom" constant="35" id="jZC-LF-dae"/>
+            </constraints>
+            <connections>
+                <outlet property="countTitleLabel" destination="qou-tq-DqM" id="o19-oC-qeH"/>
+                <outlet property="searchView" destination="p15-Ke-NcN" id="YhP-4R-42a"/>
+                <outlet property="sortButton" destination="vzz-N4-CPy" id="u22-57-jCd"/>
+                <outlet property="sortLabel" destination="cT2-gU-jGJ" id="iJF-Ws-4de"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="111.49553571428571"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="bottomArrowWithLine" width="20" height="20"/>
+        <image name="search" width="19" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

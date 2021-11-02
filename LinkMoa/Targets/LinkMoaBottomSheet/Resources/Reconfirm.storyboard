@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NfA-07-oHn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Medium.otf">
+            <string>NotoSansKR-Medium</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reconfirm View Controller-->
+        <scene sceneID="VHc-bw-vtV">
+            <objects>
+                <viewController id="NfA-07-oHn" customClass="ReconfirmViewController" customModule="LinkMoa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iLf-2G-Afg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXl-cr-e0O">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="362"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-YU-KXV">
+                                <rect key="frame" x="0.0" y="362" width="600" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신고하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2B-rb-Hcz">
+                                        <rect key="frame" x="20" y="24" width="513" height="21"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Medium" family="Noto Sans KR" pointSize="18"/>
+                                        <color key="textColor" red="0.18823529410000001" green="0.20000000000000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upL-6L-8BT">
+                                        <rect key="frame" x="20" y="130" width="560" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신고하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E6-8P-vyj">
+                                                <rect key="frame" x="252.5" y="17.5" width="55.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="16"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.32549019610000002" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="0E6-8P-vyj" firstAttribute="centerX" secondItem="upL-6L-8BT" secondAttribute="centerX" id="4ba-tu-HMl"/>
+                                            <constraint firstItem="0E6-8P-vyj" firstAttribute="centerY" secondItem="upL-6L-8BT" secondAttribute="centerY" id="VnF-fC-dC6"/>
+                                            <constraint firstAttribute="height" constant="54" id="WC6-YR-Dma"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvd-24-Ha5">
+                                        <rect key="frame" x="553" y="20" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="1co-dq-ZFh"/>
+                                            <constraint firstAttribute="height" constant="35" id="JBy-xQ-06O"/>
+                                        </constraints>
+                                        <state key="normal" image="customXmark"/>
+                                        <connections>
+                                            <action selector="dismissButtonTapped:" destination="NfA-07-oHn" eventType="touchUpInside" id="x2P-DM-7nw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크달을 신고하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a2-Ow-vwL">
+                                        <rect key="frame" x="20" y="70" width="560" height="19"/>
+                                        <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="16"/>
+                                        <color key="textColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="upL-6L-8BT" firstAttribute="leading" secondItem="O3q-YU-KXV" secondAttribute="leading" constant="20" id="7vM-jb-3DP"/>
+                                    <constraint firstAttribute="trailing" secondItem="upL-6L-8BT" secondAttribute="trailing" constant="20" id="ATm-Pc-E66"/>
+                                    <constraint firstItem="tvd-24-Ha5" firstAttribute="leading" secondItem="b2B-rb-Hcz" secondAttribute="trailing" constant="20" id="Cp2-x2-lov"/>
+                                    <constraint firstItem="b2B-rb-Hcz" firstAttribute="leading" secondItem="O3q-YU-KXV" secondAttribute="leading" constant="20" id="PCb-5U-clD"/>
+                                    <constraint firstItem="6a2-Ow-vwL" firstAttribute="top" secondItem="b2B-rb-Hcz" secondAttribute="bottom" constant="25" id="Q81-yk-pUv"/>
+                                    <constraint firstItem="6a2-Ow-vwL" firstAttribute="leading" secondItem="O3q-YU-KXV" secondAttribute="leading" constant="20" id="SYj-ze-Vde"/>
+                                    <constraint firstItem="tvd-24-Ha5" firstAttribute="top" secondItem="O3q-YU-KXV" secondAttribute="top" constant="20" id="SaF-Od-idF"/>
+                                    <constraint firstItem="upL-6L-8BT" firstAttribute="top" secondItem="O3q-YU-KXV" secondAttribute="top" constant="130" id="TVZ-fI-Esx"/>
+                                    <constraint firstAttribute="trailing" secondItem="tvd-24-Ha5" secondAttribute="trailing" constant="12" id="W9O-2t-0Qr"/>
+                                    <constraint firstItem="b2B-rb-Hcz" firstAttribute="top" secondItem="O3q-YU-KXV" secondAttribute="top" constant="24" id="sIN-iX-zkX"/>
+                                    <constraint firstAttribute="trailing" secondItem="6a2-Ow-vwL" secondAttribute="trailing" constant="20" id="sy4-tR-Hg2"/>
+                                    <constraint firstAttribute="height" constant="238" id="wyx-ng-Oif"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mn1-o2-GZT"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mn1-o2-GZT" firstAttribute="trailing" secondItem="KXl-cr-e0O" secondAttribute="trailing" id="1SG-Xu-0km"/>
+                            <constraint firstItem="Mn1-o2-GZT" firstAttribute="trailing" secondItem="O3q-YU-KXV" secondAttribute="trailing" id="3Gh-dw-4Cd"/>
+                            <constraint firstItem="O3q-YU-KXV" firstAttribute="leading" secondItem="Mn1-o2-GZT" secondAttribute="leading" id="6cX-f3-B3L"/>
+                            <constraint firstItem="O3q-YU-KXV" firstAttribute="top" secondItem="KXl-cr-e0O" secondAttribute="bottom" id="Ab3-D7-jRI"/>
+                            <constraint firstItem="KXl-cr-e0O" firstAttribute="top" secondItem="iLf-2G-Afg" secondAttribute="top" id="THS-D7-0IR"/>
+                            <constraint firstItem="KXl-cr-e0O" firstAttribute="leading" secondItem="Mn1-o2-GZT" secondAttribute="leading" id="byu-FK-MTh"/>
+                            <constraint firstAttribute="bottom" secondItem="O3q-YU-KXV" secondAttribute="bottom" id="ndh-pe-tZC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="KXl-cr-e0O" id="fQW-MF-fiW"/>
+                        <outlet property="bottomView" destination="O3q-YU-KXV" id="2K4-6x-4gH"/>
+                        <outlet property="buttonLabel" destination="0E6-8P-vyj" id="Ghz-xp-ljH"/>
+                        <outlet property="reportButtonView" destination="upL-6L-8BT" id="WyG-Pk-RWz"/>
+                        <outlet property="reportLabel" destination="6a2-Ow-vwL" id="OFe-xU-wRO"/>
+                        <outlet property="titleLabel" destination="b2B-rb-Hcz" id="37B-Ob-aAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuE-V7-ekg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.637681159420293" y="-321.42857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="customXmark" width="13" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
