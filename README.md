@@ -11,7 +11,7 @@
 
 <img src="Images/graph.png" width="400"> 
 
-유연하고 재사용가능한 서비스를 위하여 앱이 모듈화되어 있습니다.
+유연하고 재사용가능한 서비스를 만들기 위해서 앱을 모듈화 하였습니다.
 
 - LinkMoaBottomSheet: Custom Bottom Sheet 프레임워크
 - LinkMoaCore: 네트워크 및 저장소 프레임워크
@@ -24,7 +24,7 @@
 - Style Share 와 카카오 모빌리티 코드 컨벤션을 종합하여 준수
 
 ### 아키텍처
-- MVVM 방식을 채택하고 있음
+- MVVM 방식을 채택하여 사용
 - 기존에는 KickStarter ViewModel 구조와 클로저를 이용하여 데이터 바인딩을 했지만 현재는 CleanArchitecture 를 참고하여 RX 사용한 방식으로 구조 변경
 
 ### 반응형 프로그래밍
@@ -41,7 +41,7 @@
 
 
 ### 프로젝트 관리 및 모듈화
-- 협업시에 발생하는 xcodeproj 충돌을 방지하기 위해 tuist 로 프로젝트 파일을 관리함
+- 협업시에 발생하는 xcodeproj 충돌을 방지하기 위해 tuist 로 프로젝트 파일을 관리
 - git hooks 을 통해 프로젝트 파일을 브랜치마다 동적으로 생성하여 사용
 - 앱 로직을 프레임워크로 분리함으로써 기능 간의 의존성을 명확하게 하고 빌드 시간을 단축할 수 있음
 
@@ -49,17 +49,18 @@
 <img src="Images/coverage.png" width="400">  
 <img src="Images/testcount.png" width="400">  
 
-- Kit, Core, BottomSheet 프레임워크에 대한 테스트 코드 작성
+- Kit, Core, BottomSheet 각 프레임워크에 대한 테스트 코드 작성
 - Given, When, Then 을 구분지어 사용하는 GWT 방식 사용
 - 의존성이 있는 경우는 이니셜라이저를 통해 Mock 을 주입하여 테스트
 - Network 테스트는 URLProtocol 을 Mocking
 - Private 한 IBOutlet 은 Mirror 를 통해서 테스트
 
 
-
 ## 사용 기술
-
-
+- UIKit, SwiftUI, WidgetKit, MessageUI, LinkPresentation ( Apple built-in )
+- RxSwift, RxRelay, RxCocoa, RxDataSources, RxGesture ( 리액티브 프로그래밍 )
+- Moya, Kingfisher ( 네트워크 처리 )
+- Swinject ( 의존성 주입 )
 
 ## 주요 기능
 
