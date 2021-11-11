@@ -65,15 +65,16 @@
 ## 주요 기능
 
 ### 링크 추가 
-
+<img src="Images/add_link.gif" width="50%"/>  
 
 ### 폴더 추가 및 정렬
+<img src="Images/add_folder.gif" width="50%"/>  
 
+### 커스텀 웹 브라우저
+<img src="Images/web.gif" width="50%"/>  
 
-### Share Extension
-
-
-### Widget Extension
+### 위젯
+<img src="Images/widget.gif" width="50%"/>  
 
 
 
