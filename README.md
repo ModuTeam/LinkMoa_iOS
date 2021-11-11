@@ -3,7 +3,7 @@
 
 [<img src="https://developer.apple.com/assets/elements/icons/download-on-the-app-store/download-on-the-app-store.svg" width="150">](https://apps.apple.com/kr/app/%EB%A7%81%ED%81%AC%EB%AA%A8%EC%95%84-%EB%B6%81%EB%A7%88%ED%81%AC-%EA%B3%B5%EC%9C%A0-%EC%95%B1/id1559681268)
 
-링크모아는 소중한 링크들을 쉽게 찾아보고 정리할 수 있는 서비스입니다.
+링크모아는 소중한 링크들을 쉽게 찾아보고 정리할 수 있는 서비스입니다.  
 다양한 주제에 맞게 링크를 정리하고 공유함으로써 지식을 쉽게 공유할 수 있습니다.
 
 
@@ -25,7 +25,7 @@
 
 ### 아키텍처
 - MVVM 방식을 채택하여 사용
-- 기존에는 KickStarter ViewModel 구조와 클로저를 이용하여 데이터 바인딩을 했지만 현재는 CleanArchitecture 를 참고하여 RX 사용한 방식으로 구조 변경
+- KickStarter ViewModel, 클로저 데이터 바인딩 -> CleanArchitecture ViewModel, RX 데이터 바인딩 구조로 변경
 
 관련 게시글: https://linux-studying.tistory.com/28
 
