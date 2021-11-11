@@ -27,11 +27,11 @@
 - MVVM 방식을 채택하여 사용
 - 기존에는 KickStarter ViewModel 구조와 클로저를 이용하여 데이터 바인딩을 했지만 현재는 CleanArchitecture 를 참고하여 RX 사용한 방식으로 구조 변경
 
+관련 게시글: https://linux-studying.tistory.com/28
+
 ### 반응형 프로그래밍
 - RxSwift 를 사용하여 데이터 바인딩과 네트워크를 선언형으로 작성
 - Rx 프레임워크의 설계 방향성을 준수하기 위해 ViewModel 에서 이벤트는 Signal / 상태는 Driver 로 구분하여 사용
-
-관련 게시글: https://linux-studying.tistory.com/28
 
 ### 브랜치 관리 전략
 <img src="Images/pr.png" width="400"> 
