@@ -18,3 +18,5 @@ public extension UserDefaults {
         return userDefaults
     }
 }
+
+extension UserDefaults: UserDefaultsProtocol {}
