@@ -118,7 +118,6 @@ public enum LinkMoa: String, CaseIterable {
         switch self {
         case .app:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.kit.name),
                 .target(name: LinkMoa.core.name),
                 .target(name: LinkMoa.bottomSheet.name),
@@ -127,32 +126,27 @@ public enum LinkMoa: String, CaseIterable {
             ]
         case .share:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.kit.name),
                 .target(name: LinkMoa.core.name),
                 .target(name: LinkMoa.bottomSheet.name)
             ]
         case .widget, .bottomSheet:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.kit.name),
                 .target(name: LinkMoa.core.name),
             ]
         case .core:
-            return [.cocoapods(path: ".")]
+            return []
         case .kitTests:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.kit.name)
             ]
         case .coreTests:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.core.name)
             ]
         case .bottomSheetTests:
             return [
-                .cocoapods(path: "."),
                 .target(name: LinkMoa.kit.name),
                 .target(name: LinkMoa.core.name),
                 .target(name: LinkMoa.bottomSheet.name)
