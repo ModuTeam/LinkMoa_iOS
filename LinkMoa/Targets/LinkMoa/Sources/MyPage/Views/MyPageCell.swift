@@ -10,7 +10,7 @@ import UIKit
 
 import RxSwift
 
-final class MyPageCell: UITableViewCell, IdentifierType {
+final class MyPageCell: UITableViewCell, Reusable {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var browserSwitch: UISwitch!

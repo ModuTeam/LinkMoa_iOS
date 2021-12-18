@@ -77,8 +77,8 @@ final class HomeViewController: UIViewController {
         topMenuCollectionView.dataSource = self
         topMenuCollectionView.delegate = self
         topMenuCollectionView.register(
-            UINib(nibName: TopMenuCell.cellIdentifier, bundle: Bundle.module),
-            forCellWithReuseIdentifier: TopMenuCell.cellIdentifier
+            UINib(nibName: TopMenuCell.identifier, bundle: Bundle.module),
+            forCellWithReuseIdentifier: TopMenuCell.identifier
         )
         topMenuCollectionView.selectItem(
             at: IndexPath(item: 0, section: 0),
@@ -146,7 +146,7 @@ extension HomeViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         guard let titleCell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: TopMenuCell.cellIdentifier,
+                withReuseIdentifier: TopMenuCell.identifier,
                 for: indexPath
         ) as? TopMenuCell
         else {

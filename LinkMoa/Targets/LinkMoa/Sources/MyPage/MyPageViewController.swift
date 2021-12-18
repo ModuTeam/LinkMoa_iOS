@@ -113,7 +113,7 @@ final class MyPageViewController: UIViewController, CustomAlert, BackgroundBlur 
         
         // menuTableView
         outputs.settingMenus
-            .drive(menuTableView.rx.items(cellIdentifier: MyPageCell.cellIdentifier)) {
+            .drive(menuTableView.rx.items(cellIdentifier: MyPageCell.identifier)) {
                 [weak self] (index: Int, title: String, cell: MyPageCell) -> Void in
                 guard let self = self else { return }
                 guard let section = MyPageSection(rawValue: index) else { return }
@@ -214,8 +214,8 @@ final class MyPageViewController: UIViewController, CustomAlert, BackgroundBlur 
     }
     
     private func prepareMenuTableView() {
-        let nib = UINib(nibName: MyPageCell.cellIdentifier, bundle: nil)
-        menuTableView.register(nib, forCellReuseIdentifier: MyPageCell.cellIdentifier)
+        let nib = UINib(nibName: MyPageCell.identifier, bundle: nil)
+        menuTableView.register(nib, forCellReuseIdentifier: MyPageCell.identifier)
     }
     
     private func composeMailVC() {

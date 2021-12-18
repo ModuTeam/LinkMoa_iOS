@@ -120,7 +120,7 @@ final class SurfingCategoryViewController: UIViewController {
             .disposed(by: disposeBag)
         
         outputs.categoryDetailFolders
-            .drive(folderCollectionView.rx.items(cellIdentifier: FolderCell.cellIdentifier, cellType: FolderCell.self)) { _, result, cell in
+            .drive(folderCollectionView.rx.items(cellIdentifier: FolderCell.identifier, cellType: FolderCell.self)) { _, result, cell in
                 cell.update(by: result)
             }.disposed(by: disposeBag)
 
@@ -222,17 +222,13 @@ final class SurfingCategoryViewController: UIViewController {
     
     private func prepareFolderCollectionView() {
         folderCollectionView.delegate = self
-        let nib = UINib(nibName: FolderCell.cellIdentifier, bundle: nil)
-        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.cellIdentifier)
+        let nib = UINib(nibName: FolderCell.identifier, bundle: nil)
+        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
         folderCollectionView.contentInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
     }
     
     private func prepareTagCollectionView() {
-        tagCollectionView.register(
-            UINib(nibName: SurfingCategoryTagCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: SurfingCategoryTagCell.cellIdentifier
-        )
-        
+        tagCollectionView.register(SurfingCategoryCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryCell.identifier)
         let layout = LeftAlignedCollectionViewFlowLayout()
         layout.delegate = self
         tagCollectionView.collectionViewLayout = layout

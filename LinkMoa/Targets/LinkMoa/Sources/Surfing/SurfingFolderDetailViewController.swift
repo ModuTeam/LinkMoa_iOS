@@ -83,7 +83,7 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
         outputs.folderDetail
             .map { $0.linkList }
             .drive(linkCollectionView.rx.items(
-                cellIdentifier: LinkCell.cellIdentifier,
+                cellIdentifier: LinkCell.identifier,
                 cellType: LinkCell.self
             )) {
                 _, result, cell in
@@ -196,8 +196,8 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
     
     private func prepareLinkCollectionView() {
         linkCollectionView.delegate = self
-        let nib = UINib(nibName: LinkCell.cellIdentifier, bundle: nil)
-        linkCollectionView.register(nib, forCellWithReuseIdentifier: LinkCell.cellIdentifier)
+        let nib = UINib(nibName: LinkCell.identifier, bundle: nil)
+        linkCollectionView.register(nib, forCellWithReuseIdentifier: LinkCell.identifier)
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 16

@@ -198,8 +198,8 @@ final class AddFolderViewController: UIViewController {
     }
     
     private func prepareTagCollectionView() {
-        let tagNib = UINib(nibName: TagCell.cellIdentifier, bundle: Bundle.module)
-        tagCollectionView.register(tagNib, forCellWithReuseIdentifier: TagCell.cellIdentifier)
+        let tagNib = UINib(nibName: TagCell.identifier, bundle: Bundle.module)
+        tagCollectionView.register(tagNib, forCellWithReuseIdentifier: TagCell.identifier)
     }
     
     private func prepareFolderNameTextField() {
@@ -279,7 +279,7 @@ extension AddFolderViewController {
         return RxCollectionViewSectionedAnimatedDataSource(configureCell: {
             dataSource, collectionView, indexPath, _ in
             guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: TagCell.cellIdentifier,
+                withReuseIdentifier: TagCell.identifier,
                 for: indexPath
             ) as? TagCell
             else {

@@ -9,7 +9,7 @@
 import LinkMoaKit
 import UIKit
 
-final class CategoryCell: UICollectionViewCell, IdentifierType {
+final class CategoryCell: UICollectionViewCell, Reusable {
     @IBOutlet public weak var titleLabel: UILabel!
     
     var detailCategory: DetailCategory?

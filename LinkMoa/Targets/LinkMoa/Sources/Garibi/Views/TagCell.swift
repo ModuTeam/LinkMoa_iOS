@@ -8,7 +8,7 @@
 import LinkMoaKit
 import UIKit
 
-final class TagCell: UICollectionViewCell, IdentifierType {
+final class TagCell: UICollectionViewCell, Reusable {
     @IBOutlet private weak var nameLabel: UILabel!
     
     override func awakeFromNib() {

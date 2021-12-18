@@ -12,7 +12,7 @@ import UIKit
 import RxSwift
 import Kingfisher
 
-final class LinkCell: UICollectionViewCell, IdentifierType {
+final class LinkCell: UICollectionViewCell, Reusable {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var urlLabel: UILabel!
     @IBOutlet private weak var faviconImageView: UIImageView!
