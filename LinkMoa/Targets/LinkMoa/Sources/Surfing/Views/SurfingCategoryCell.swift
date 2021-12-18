@@ -72,7 +72,7 @@ final class SurfingCategoryCell: UICollectionViewCell, Reusable {
         fatalError()
     }
  
-    func setupUI() {
+    private func setupUI() {
         addSubview(categoryImageView)
         addSubview(stackView)
         
