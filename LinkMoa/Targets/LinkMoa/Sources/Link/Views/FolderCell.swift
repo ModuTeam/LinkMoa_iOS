@@ -12,7 +12,7 @@ import UIKit
 import RxSwift
 import Kingfisher
 
-final class FolderCell: UICollectionViewCell, IdentifierType {
+final class FolderCell: UICollectionViewCell, Reusable {
     lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
         layer.frame = webPreviewImageView.bounds

@@ -10,7 +10,7 @@ import UIKit
 
 import RxSwift
 
-final class FolderHeaderView: UICollectionReusableView, IdentifierType {
+final class FolderHeaderView: UICollectionReusableView, Reusable {
     @IBOutlet private(set) weak var searchView: UIView!
     @IBOutlet private(set) weak var countTitleLabel: UILabel!
     @IBOutlet private(set) weak var sortButton: UIButton!

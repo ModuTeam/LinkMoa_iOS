@@ -179,13 +179,13 @@ final class FolderViewController: UIViewController, CustomAlert {
         folderCollectionView.delegate = self
         folderCollectionView.contentInset = UIEdgeInsets(top: 0, left: 15, bottom: 50, right: 15)
         folderCollectionView.register(
-            UINib(nibName: FolderCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: FolderCell.cellIdentifier
+            UINib(nibName: FolderCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: FolderCell.identifier
         )
         folderCollectionView.register(
-            UINib(nibName: FolderHeaderView.viewIdentifier, bundle: nil),
+            UINib(nibName: FolderHeaderView.identifier, bundle: nil),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: FolderHeaderView.viewIdentifier
+            withReuseIdentifier: FolderHeaderView.identifier
         )
     }
 }
@@ -251,7 +251,7 @@ extension FolderViewController {
             [weak self] dataSource, collectionView, indexPath, _ in
             guard let self = self else { return UICollectionViewCell() }
             guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: FolderCell.cellIdentifier,
+                    withReuseIdentifier: FolderCell.identifier,
                     for: indexPath
             ) as? FolderCell
             else {
@@ -300,7 +300,7 @@ extension FolderViewController {
             case UICollectionView.elementKindSectionHeader:
                 guard let headerView = collectionView.dequeueReusableSupplementaryView(
                     ofKind: UICollectionView.elementKindSectionHeader,
-                    withReuseIdentifier: FolderHeaderView.viewIdentifier,
+                    withReuseIdentifier: FolderHeaderView.identifier,
                     for: indexPath
                 ) as? FolderHeaderView
                 else {

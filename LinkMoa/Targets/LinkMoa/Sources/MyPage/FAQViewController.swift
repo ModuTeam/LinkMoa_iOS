@@ -24,8 +24,8 @@ final class FAQViewController: UIViewController {
         faqTableView.dataSource = self
         
         faqTableView.register(
-            UINib(nibName: QuestionHeaderView.viewIdentifier, bundle: nil),
-            forHeaderFooterViewReuseIdentifier: QuestionHeaderView.viewIdentifier
+            UINib(nibName: QuestionHeaderView.identifier, bundle: nil),
+            forHeaderFooterViewReuseIdentifier: QuestionHeaderView.identifier
         )
         faqTableView.rowHeight = UITableView.automaticDimension
         
@@ -63,7 +63,7 @@ extension FAQViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(
-            withIdentifier: QuestionHeaderView.viewIdentifier
+            withIdentifier: QuestionHeaderView.identifier
         ) as? QuestionHeaderView
         else {
             fatalError()

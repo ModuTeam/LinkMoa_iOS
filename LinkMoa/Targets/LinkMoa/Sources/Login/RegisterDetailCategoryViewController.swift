@@ -65,7 +65,7 @@ final class RegisterDetailCategoryViewController: UIViewController {
                 let indexPath = IndexPath(item: index, section: 0)
                 
                 guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: CategoryCell.cellIdentifier,
+                    withReuseIdentifier: CategoryCell.identifier,
                     for: indexPath
                 ) as? CategoryCell
                 else {
@@ -122,8 +122,8 @@ final class RegisterDetailCategoryViewController: UIViewController {
     
     private func prepareCategoryCollectionView() {
         detailCategoryCollectionView.register(
-            UINib(nibName: CategoryCell.cellIdentifier, bundle: Bundle.module),
-            forCellWithReuseIdentifier: CategoryCell.cellIdentifier
+            UINib(nibName: CategoryCell.identifier, bundle: Bundle.module),
+            forCellWithReuseIdentifier: CategoryCell.identifier
         )
         detailCategoryCollectionView.delegate = self
     }

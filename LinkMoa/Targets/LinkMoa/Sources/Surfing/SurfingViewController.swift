@@ -95,13 +95,10 @@ final class SurfingViewController: UIViewController {
     
     private func prepareCollectionView() {
         surfingCollectionView.register(
-            UINib(nibName: FolderCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: FolderCell.cellIdentifier
+            UINib(nibName: FolderCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: FolderCell.identifier
         )
-        surfingCollectionView.register(
-            UINib(nibName: SurfingCategoryCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: SurfingCategoryCell.cellIdentifier
-        )
+        surfingCollectionView.register(SurfingCategoryCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryCell.identifier)
         surfingCollectionView.register(
             UINib(nibName: SurfingHeaderView.reuseableViewIndetifier, bundle: nil),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
@@ -154,7 +151,7 @@ extension SurfingViewController {
             switch dataSource[indexPath] {
             case .topTenItem(let folder):
                 guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: FolderCell.cellIdentifier, for: indexPath
+                    withReuseIdentifier: FolderCell.identifier, for: indexPath
                 ) as? FolderCell
                 else {
                     return UICollectionViewCell()
@@ -164,7 +161,7 @@ extension SurfingViewController {
                 return cell
             case .categoryItem:
                 guard let cell: SurfingCategoryCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: SurfingCategoryCell.cellIdentifier, for: indexPath
+                    withReuseIdentifier: SurfingCategoryCell.identifier, for: indexPath
                 ) as? SurfingCategoryCell
                 else {
                     return UICollectionViewCell()
@@ -175,7 +172,7 @@ extension SurfingViewController {
                 return cell
             case .likedItem(let folder):
                 guard let cell: FolderCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: FolderCell.cellIdentifier,
+                    withReuseIdentifier: FolderCell.identifier,
                     for: indexPath
                 ) as? FolderCell
                 else {

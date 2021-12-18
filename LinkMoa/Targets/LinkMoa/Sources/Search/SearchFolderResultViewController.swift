@@ -58,7 +58,7 @@ final class SearchFolderResultViewController: UIViewController {
             .disposed(by: disposeBag)
         
         outputs.results
-            .drive(folderCollectionView.rx.items(cellIdentifier: FolderCell.cellIdentifier, cellType: FolderCell.self)) { [weak self] _, result, cell in
+            .drive(folderCollectionView.rx.items(cellIdentifier: FolderCell.identifier, cellType: FolderCell.self)) { [weak self] _, result, cell in
                 guard let self = self else { return }
                 cell.update(by: result, isHiddenLike: self.type == .my)
             }
@@ -104,8 +104,8 @@ final class SearchFolderResultViewController: UIViewController {
         folderCollectionView.collectionViewLayout = layout
         folderCollectionView.contentInset = UIEdgeInsets(top: 24, left: 15, bottom: 50, right: 15)
         folderCollectionView.register(
-            UINib(nibName: FolderCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: FolderCell.cellIdentifier
+            UINib(nibName: FolderCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: FolderCell.identifier
         )
     }
 }

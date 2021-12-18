@@ -11,10 +11,10 @@ import XCTest
 @testable import LinkMoaKit
 
 class IndentifierTypeTests: XCTestCase {
-    class Sut: IdentifierType {}
+    class Sut: Reusable {}
     
     func testCellIdentifier() throws {
-        XCTAssertEqual(Sut.cellIdentifier, String(describing: IndentifierTypeTests.Sut.self))
+        XCTAssertEqual(Sut.identifier, String(describing: IndentifierTypeTests.Sut.self))
     }
     
     func testViewIdentifier() throws {

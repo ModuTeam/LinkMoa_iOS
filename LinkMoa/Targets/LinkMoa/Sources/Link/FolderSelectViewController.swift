@@ -70,8 +70,8 @@ final class FolderSelectViewController: UIViewController {
         folderSelectCollectionView.delegate = self
         folderSelectCollectionView.contentInset = .init(top: 15, left: 15, bottom: 50, right: 15)
         folderSelectCollectionView.register(
-            UINib(nibName: FolderCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: FolderCell.cellIdentifier
+            UINib(nibName: FolderCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: FolderCell.identifier
         )
     }
 }
@@ -89,7 +89,7 @@ extension FolderSelectViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         guard let folderCell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: FolderCell.cellIdentifier, for: indexPath
+                withReuseIdentifier: FolderCell.identifier, for: indexPath
         ) as? FolderCell
         else {
             return UICollectionViewCell()

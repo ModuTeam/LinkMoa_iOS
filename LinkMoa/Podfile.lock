@@ -38,6 +38,7 @@ PODS:
   - RxRelay (5.1.3):
     - RxSwift (~> 5)
   - RxSwift (5.1.3)
+  - SnapKit (5.0.1)
   - SwiftLint (0.43.1)
   - Swinject (2.8.1)
   - Toast-Swift (5.0.1)
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - RxDataSources (~> 4.0)
   - RxGesture (~> 3.0)
   - RxSwift (~> 5.0)
+  - SnapKit (~> 5.0.0)
   - SwiftLint
   - Swinject
   - Toast-Swift (~> 5.0)
@@ -76,6 +78,7 @@ SPEC REPOS:
     - RxGesture
     - RxRelay
     - RxSwift
+    - SnapKit
     - SwiftLint
     - Swinject
     - Toast-Swift
@@ -97,10 +100,11 @@ SPEC CHECKSUMS:
   RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   Swinject: 97112918bd7e0785dc2df7036213f3c8cbba6586
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f2dcc11cc8d0aa9cc9312b49d09c101cb8ed8307
+PODFILE CHECKSUM: 9e0ba6267859d1ae2f7bc1feb74069e4f8809a2f
 
 COCOAPODS: 1.11.2

@@ -8,7 +8,7 @@
 import LinkMoaKit
 import UIKit
 
-final class QuestionHeaderView: UITableViewHeaderFooterView, IdentifierType {    
+final class QuestionHeaderView: UITableViewHeaderFooterView, Reusable {    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var arrowImageView: UIImageView!
     @IBOutlet weak var sectionButton: UIButton!

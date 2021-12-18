@@ -61,7 +61,7 @@ final class SearchLinkResultViewController: UIViewController, UIGestureRecognize
         
         outputs.results
             .drive(linkCollectionView.rx.items(
-                cellIdentifier: LinkCell.cellIdentifier,
+                cellIdentifier: LinkCell.identifier,
                 cellType: LinkCell.self)) { _, result, cell in
                 cell.update(by: result, isHiddenEdit: true)
             }
@@ -101,8 +101,8 @@ final class SearchLinkResultViewController: UIViewController, UIGestureRecognize
         linkCollectionView.contentInset.top = 15
         linkCollectionView.contentInset.bottom = 50
         linkCollectionView.register(
-            UINib(nibName: LinkCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: LinkCell.cellIdentifier
+            UINib(nibName: LinkCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: LinkCell.identifier
         )
     }
 }

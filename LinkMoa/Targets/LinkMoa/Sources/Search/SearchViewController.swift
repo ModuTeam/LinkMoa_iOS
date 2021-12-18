@@ -207,8 +207,8 @@ final class SearchViewController: UIViewController, CustomAlert {
         topMenuCollectionView.dataSource = self
         topMenuCollectionView.delegate = self
         topMenuCollectionView.register(
-            UINib(nibName: TopMenuCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: TopMenuCell.cellIdentifier
+            UINib(nibName: TopMenuCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: TopMenuCell.identifier
         )
         topMenuCollectionView.selectItem(
             at: selectedIndexPath,
@@ -240,7 +240,7 @@ extension SearchViewController: UICollectionViewDataSource {
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: TopMenuCell.cellIdentifier,
+            withReuseIdentifier: TopMenuCell.identifier,
             for: indexPath
         ) as? TopMenuCell
         else {

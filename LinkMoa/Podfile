@@ -5,6 +5,7 @@ def appPod()
   pod 'Carte'
   pod 'GoogleSignIn', '~> 6.0'
   pod 'Swinject'
+  pod 'SnapKit', '~> 5.0.0'
 end
 
 def subPod()

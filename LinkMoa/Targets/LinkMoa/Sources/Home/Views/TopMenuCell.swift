@@ -8,7 +8,7 @@
 import LinkMoaKit
 import UIKit
 
-final class TopMenuCell: UICollectionViewCell, IdentifierType {
+final class TopMenuCell: UICollectionViewCell, Reusable {
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {

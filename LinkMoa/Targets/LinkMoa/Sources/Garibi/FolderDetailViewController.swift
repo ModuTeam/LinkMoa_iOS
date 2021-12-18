@@ -214,8 +214,8 @@ internal class FolderDetailViewController: UIViewController, CustomAlert, Backgr
     private func prepareLinkCollectionView() {
         linkCollectionView.delegate = self
         linkCollectionView.register(
-            UINib(nibName: LinkCell.cellIdentifier, bundle: nil),
-            forCellWithReuseIdentifier: LinkCell.cellIdentifier
+            UINib(nibName: LinkCell.identifier, bundle: nil),
+            forCellWithReuseIdentifier: LinkCell.identifier
         )
     }
     
@@ -363,7 +363,7 @@ extension FolderDetailViewController {
             [weak self] dataSource, collectionView, indexPath, _ in
                 guard let self = self else { fatalError() }
                 guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: LinkCell.cellIdentifier,
+                    withReuseIdentifier: LinkCell.identifier,
                     for: indexPath
                 ) as? LinkCell
                 else {

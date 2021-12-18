@@ -69,7 +69,7 @@ final class SurfingFolderViewController: UIViewController {
     private func bind() {
         outputs.folders
             .drive(folderCollectionView.rx.items(
-                    cellIdentifier: FolderCell.cellIdentifier,
+                    cellIdentifier: FolderCell.identifier,
                     cellType: FolderCell.self)
             ) { _, result, cell in
                 cell.update(by: result)
@@ -126,8 +126,8 @@ final class SurfingFolderViewController: UIViewController {
     
     private func prepareFolderCollectionView() {
         folderCollectionView.delegate = self
-        let nib = UINib(nibName: FolderCell.cellIdentifier, bundle: Bundle.module)
-        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.cellIdentifier)
+        let nib = UINib(nibName: FolderCell.identifier, bundle: Bundle.module)
+        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
         let layout = UICollectionViewFlowLayout()
         folderCollectionView.collectionViewLayout = layout
         folderCollectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 50, right: 16)
