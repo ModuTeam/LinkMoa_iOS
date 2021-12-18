@@ -77,7 +77,7 @@ final class SurfingCategoryViewController: UIViewController {
         
         outputs.categories
             .drive(tagCollectionView.rx.items(
-                cellIdentifier: SurfingCategoryTagCell.cellIdentifier,
+                cellIdentifier: SurfingCategoryTagCell.identifier,
                 cellType: SurfingCategoryTagCell.self)
             ) { _, result, cell in
                 cell.update(by: result)
@@ -228,7 +228,7 @@ final class SurfingCategoryViewController: UIViewController {
     }
     
     private func prepareTagCollectionView() {
-        tagCollectionView.register(SurfingCategoryCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryCell.identifier)
+        tagCollectionView.register(SurfingCategoryTagCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryTagCell.identifier)
         let layout = LeftAlignedCollectionViewFlowLayout()
         layout.delegate = self
         tagCollectionView.collectionViewLayout = layout
