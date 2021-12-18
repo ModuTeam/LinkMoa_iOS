@@ -13,10 +13,12 @@ final class SurfingHeaderView: UICollectionReusableView, Reusable {
 
     let moreButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "chevron.backward"), for: .normal)
+        button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
         button.setTitle("더보기", for: .normal)
+        button.setTitleColor(UIColor(rgb: 0x364788), for: .normal)
         button.semanticContentAttribute = .forceRightToLeft
         button.tintColor = UIColor(rgb: 0x364788)
+        button.contentHorizontalAlignment = .center
         return button
     }()
     
