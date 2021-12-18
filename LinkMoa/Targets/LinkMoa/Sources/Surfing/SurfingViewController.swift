@@ -10,9 +10,13 @@ import UIKit
 import RxCocoa
 import RxDataSources
 import RxSwift
+import SnapKit
 
 final class SurfingViewController: UIViewController {
-    @IBOutlet private weak var surfingCollectionView: UICollectionView!
+    var surfingCollectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        return collectionView
+    }()
     
     private lazy var inputs: SurfingViewModel.Input = .init(
         fetchTopTenFolders: topTenTrigger.asSignal(),
@@ -30,17 +34,18 @@ final class SurfingViewController: UIViewController {
     private let viewModel: SurfingViewModel
     weak var homeNC: HomeNavigationController? /// property injection
     
-    init?(coder: NSCoder, viewModel: SurfingViewModel) {
+    init(viewModel: SurfingViewModel) {
         self.viewModel = viewModel
-        super.init(coder: coder)
+        super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         prepareCollectionView()
         bind()
     }
@@ -54,6 +59,13 @@ final class SurfingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.homeNC?.addButtonView.isHidden = true
+    }
+    
+    private func setupUI() {
+        view.addSubview(surfingCollectionView)
+        surfingCollectionView.snp.makeConstraints { make in
+            make.edges.equalTo(view)
+        }
     }
     
     private func bind() {

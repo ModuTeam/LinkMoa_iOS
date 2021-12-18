@@ -23,13 +23,8 @@ final class SurfingAssembly: Assembly {
         }
         
         /// SurfingViewController
-        container.register(SurfingViewController.self) { r in
-            let sb = UIStoryboard(name: SurfingViewController.storyboardName(), bundle: bundle)
-            let vc = sb.instantiateInitialViewController { corder in
-                SurfingViewController(coder: corder, viewModel: r.resolve(SurfingViewModel.self)!)
-            }!
-            
-            return vc
+        container.register(SurfingViewController.self) { resolver in
+            return SurfingViewController(viewModel: resolver.resolve(SurfingViewModel.self)!)
         }
         
         /// SurfingFolderDetailViewModel
