@@ -104,10 +104,9 @@ final class SurfingViewController: UIViewController {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: SurfingHeaderView.reuseableViewIndetifier
         )
-        surfingCollectionView.register(
-            UINib(nibName: SurfingFooterView.reuseableViewIndetifier, bundle: nil),
+        surfingCollectionView.register(SurfingFooterView.classForCoder(),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-            withReuseIdentifier: SurfingFooterView.reuseableViewIndetifier
+            withReuseIdentifier: SurfingFooterView.identifier
         )
         surfingCollectionView.register(
             UINib(nibName: SurfingSearchHeaderView.reuseableViewIndetifier, bundle: nil),
@@ -219,7 +218,7 @@ extension SurfingViewController {
                 return UICollectionReusableView()
                 
             case UICollectionView.elementKindSectionFooter:
-                guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: SurfingFooterView.reuseableViewIndetifier, for: indexPath) as? SurfingFooterView else { fatalError() }
+                guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: SurfingFooterView.identifier, for: indexPath) as? SurfingFooterView else { fatalError() }
                 return footerView
             
             default:

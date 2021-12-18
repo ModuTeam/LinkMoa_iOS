@@ -17,13 +17,13 @@ final class SurfingCategoryTagCell: UICollectionViewCell, Reusable {
         view.layer.cornerRadius = 17
         view.backgroundColor = .linkMoaDarkBlueColor
         view.layer.borderWidth = 1.5
-        view.layer.borderColor = UIColor.init(rgb: 0x8896CC).cgColor
+        view.layer.borderColor = UIColor(rgb: 0x8896CC).cgColor
         return view
     }()
     
     let titleLabel: UILabel = {
        let label = UILabel()
-        label.textColor = UIColor.init(rgb: 0x8896CC)
+        label.textColor = UIColor(rgb: 0x8896CC)
         label.font = .notoSansMedium(size: 14)
         return label
     }()
@@ -39,7 +39,7 @@ final class SurfingCategoryTagCell: UICollectionViewCell, Reusable {
                 containerView.backgroundColor = .linkMoaDarkBlueColor
                 titleLabel.textColor = UIColor.init(rgb: 0x8896CC)
                 containerView.layer.borderWidth = 1.5
-                containerView.layer.borderColor = UIColor.init(rgb: 0x8896CC).cgColor
+                containerView.layer.borderColor = UIColor(rgb: 0x8896CC).cgColor
             }
         }
     }
