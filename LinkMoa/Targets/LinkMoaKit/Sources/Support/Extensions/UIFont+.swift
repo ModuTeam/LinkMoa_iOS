@@ -11,6 +11,10 @@ import UIKit
 public extension UIFont {
     
     static func notoSansMedium(size: CGFloat) -> UIFont {
-        return UIFont(name: "NotoSansKR-Medium", size: size) ?? UIFont.systemFont(ofSize: 16)
+        return UIFont(name: "NotoSansKR-Medium", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    static func notoSansRegular(size: CGFloat) -> UIFont {
+        return UIFont(name: "NotoSansKR-Regular", size: size) ?? UIFont.systemFont(ofSize: size)
     }
 }
