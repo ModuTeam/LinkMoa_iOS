@@ -107,10 +107,9 @@ final class SurfingViewController: UIViewController {
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
             withReuseIdentifier: SurfingFooterView.identifier
         )
-        surfingCollectionView.register(
-            UINib(nibName: SurfingSearchHeaderView.reuseableViewIndetifier, bundle: nil),
+        surfingCollectionView.register(SurfingSearchHeaderView.classForCoder(),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: SurfingSearchHeaderView.reuseableViewIndetifier
+            withReuseIdentifier: SurfingSearchHeaderView.identifier
         )
         surfingCollectionView.collectionViewLayout = createSectionLayout()
     }
@@ -189,7 +188,7 @@ extension SurfingViewController {
             switch kind {
             case UICollectionView.elementKindSectionHeader:
                 if indexPath.section == 0 {
-                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingSearchHeaderView.reuseableViewIndetifier, for: indexPath) as? SurfingSearchHeaderView else { fatalError() }
+                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingSearchHeaderView.identifier, for: indexPath) as? SurfingSearchHeaderView else { fatalError() }
                     
                     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped))
                     tapGesture.cancelsTouchesInView = false
