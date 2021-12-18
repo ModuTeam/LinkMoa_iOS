@@ -99,10 +99,9 @@ final class SurfingViewController: UIViewController {
             forCellWithReuseIdentifier: FolderCell.identifier
         )
         surfingCollectionView.register(SurfingCategoryCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryCell.identifier)
-        surfingCollectionView.register(
-            UINib(nibName: SurfingHeaderView.reuseableViewIndetifier, bundle: nil),
+        surfingCollectionView.register(SurfingHeaderView.classForCoder(),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: SurfingHeaderView.reuseableViewIndetifier
+            withReuseIdentifier: SurfingHeaderView.identifier
         )
         surfingCollectionView.register(SurfingFooterView.classForCoder(),
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
@@ -204,7 +203,7 @@ extension SurfingViewController {
                     
                     return headerView
                 } else if indexPath.section > 0 && indexPath.section < 3  {
-                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingHeaderView.reuseableViewIndetifier, for: indexPath) as? SurfingHeaderView else { fatalError() }
+                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingHeaderView.identifier, for: indexPath) as? SurfingHeaderView else { fatalError() }
                     
                     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.headerViewTapped(_:)))
                     headerView.tag = indexPath.section
