@@ -11,6 +11,7 @@ import RxCocoa
 import RxDataSources
 import RxSwift
 import SnapKit
+import LinkMoaKit
 
 final class SurfingViewController: UIViewController {
     var surfingCollectionView: UICollectionView = {
@@ -48,10 +49,6 @@ final class SurfingViewController: UIViewController {
         setupUI()
         prepareCollectionView()
         bind()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         topTenTrigger.accept(())
         likedTrigger.accept(())
     }
@@ -106,23 +103,16 @@ final class SurfingViewController: UIViewController {
     }
     
     private func prepareCollectionView() {
+        
         surfingCollectionView.register(
             UINib(nibName: FolderCell.identifier, bundle: nil),
             forCellWithReuseIdentifier: FolderCell.identifier
         )
-        surfingCollectionView.register(SurfingCategoryCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryCell.identifier)
-        surfingCollectionView.register(SurfingHeaderView.classForCoder(),
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: SurfingHeaderView.identifier
-        )
-        surfingCollectionView.register(SurfingFooterView.classForCoder(),
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
-            withReuseIdentifier: SurfingFooterView.identifier
-        )
-        surfingCollectionView.register(SurfingSearchHeaderView.classForCoder(),
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: SurfingSearchHeaderView.identifier
-        )
+        surfingCollectionView.registerCell(SurfingCategoryCell.self)
+        surfingCollectionView.registerHeader(SurfingHeaderView.self)
+        surfingCollectionView.registerFooter(SurfingFooterView.self)
+        surfingCollectionView.registerHeader(SurfingSearchHeaderView.self)
+        
         surfingCollectionView.collectionViewLayout = createSectionLayout()
     }
     
@@ -136,19 +126,16 @@ final class SurfingViewController: UIViewController {
     }
     
     @objc private func headerViewTapped(_ sender: UIGestureRecognizer) {
-        switch sender.view?.tag {
-        case 0:
+        if sender.view?.tag == 0 {
             let type = SurfingFolderType.topTen
             let vc: SurfingFolderViewController = DIContainer.shared.resolve(argument: type)
             vc.homeNC = homeNC
             homeNC?.pushViewController(vc, animated: true)
-        case 2:
+        } else if sender.view?.tag == 2 {
             let type = SurfingFolderType.liked
             let vc: SurfingFolderViewController = DIContainer.shared.resolve(argument: type)
             vc.homeNC = homeNC
             homeNC?.pushViewController(vc, animated: true)
-        default:
-            break
         }
     }
 }
@@ -156,37 +143,20 @@ final class SurfingViewController: UIViewController {
 // MARK: - DataSource & Layout
 extension SurfingViewController {
     private func dataSource() -> RxCollectionViewSectionedReloadDataSource<SurfingSectionModel> {
-        return RxCollectionViewSectionedReloadDataSource<SurfingSectionModel>(configureCell: { dataSource, collectionView, indexPath, _ in
+        return RxCollectionViewSectionedReloadDataSource<SurfingSectionModel>(configureCell: { dataSource, collectionView, indexPath, item in
             switch dataSource[indexPath] {
             case .topTenItem(let folder):
-                guard let cell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: FolderCell.identifier, for: indexPath
-                ) as? FolderCell
-                else {
-                    return UICollectionViewCell()
-                }
-                
+                let cell = collectionView.dequeueReusableCell(FolderCell.self, for: indexPath)
                 cell.update(by: folder)
+               
                 return cell
             case .categoryItem:
-                guard let cell: SurfingCategoryCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: SurfingCategoryCell.identifier, for: indexPath
-                ) as? SurfingCategoryCell
-                else {
-                    return UICollectionViewCell()
-                }
-                
+                let cell = collectionView.dequeueReusableCell(SurfingCategoryCell.self, for: indexPath)
                 cell.index = indexPath.item
                 cell.categoryImageView.image = UIImage(named: "category_\(indexPath.item)")
                 return cell
             case .likedItem(let folder):
-                guard let cell: FolderCell = collectionView.dequeueReusableCell(
-                    withReuseIdentifier: FolderCell.identifier,
-                    for: indexPath
-                ) as? FolderCell
-                else {
-                    return UICollectionViewCell()
-                }
+                let cell = collectionView.dequeueReusableCell(FolderCell.self, for: indexPath)
                 
                 cell.gradientLayer.isHidden = false
                 cell.update(by: folder)
@@ -200,8 +170,7 @@ extension SurfingViewController {
             switch kind {
             case UICollectionView.elementKindSectionHeader:
                 if indexPath.section == 0 {
-                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingSearchHeaderView.identifier, for: indexPath) as? SurfingSearchHeaderView else { fatalError() }
-                    
+                    let headerView = collectionView.dequeueReusableHeaderView(SurfingSearchHeaderView.self, for: indexPath)
                     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped))
                     tapGesture.cancelsTouchesInView = false
                     headerView.searchView.addGestureRecognizer(tapGesture)
@@ -213,8 +182,8 @@ extension SurfingViewController {
                     headerView.titleHeaderView.isUserInteractionEnabled = true
                     
                     return headerView
-                } else if indexPath.section > 0 && indexPath.section < 3  {
-                    guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SurfingHeaderView.identifier, for: indexPath) as? SurfingHeaderView else { fatalError() }
+                } else  {
+                    let headerView = collectionView.dequeueReusableHeaderView(SurfingHeaderView.self, for: indexPath)
                     
                     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.headerViewTapped(_:)))
                     headerView.tag = indexPath.section
@@ -225,10 +194,9 @@ extension SurfingViewController {
                     
                     return headerView
                 }
-                return UICollectionReusableView()
                 
             case UICollectionView.elementKindSectionFooter:
-                guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: SurfingFooterView.identifier, for: indexPath) as? SurfingFooterView else { fatalError() }
+                let footerView = collectionView.dequeueReusableFooterView(SurfingFooterView.self, for: indexPath)
                 return footerView
             
             default:
