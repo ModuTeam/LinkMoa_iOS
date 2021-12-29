@@ -14,6 +14,7 @@ import RxCocoa
 import RxSwift
 
 final class SurfingViewModel: ViewModelType {
+    
     struct Input {
         let fetchTopTenFolders: Signal<Void>
         let fetchLikedFolders: Signal<Void>
@@ -24,7 +25,7 @@ final class SurfingViewModel: ViewModelType {
         var errorMessage: Signal<String>
     }
     
-    private let errorMessage: PublishRelay<String> = PublishRelay()
+    private let errorMessage = PublishRelay<String>()
     private let disposeBag = DisposeBag()
 
     // Dependency Injection
@@ -35,9 +36,9 @@ final class SurfingViewModel: ViewModelType {
     }
     
     func transform(input: Input) -> Output {
-        let sections: BehaviorRelay<[SurfingSectionModel]> = BehaviorRelay(value: [
+        let sections = BehaviorRelay<[SurfingSectionModel]>(value: [
             .topTenSection(items: .init(repeating: .topTenItem(folder: .init()), count: 4)),
-            .categorySection(items: Array(0...4).map {.categoryItem(index: $0)}),
+            .categorySection(items: Array(0...4).map { .categoryItem(index: $0) }),
             .likedSection(items: [])
         ])
         
