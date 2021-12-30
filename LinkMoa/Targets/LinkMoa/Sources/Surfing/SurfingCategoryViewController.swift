@@ -9,23 +9,125 @@ import LinkMoaCore
 import LinkMoaKit
 import UIKit
 
+import SnapKit
 import RxSwift
 import RxCocoa
 import Toast_Swift
+import SwiftUI
 
 final class SurfingCategoryViewController: UIViewController {
+    
+    let folderCollectionView2: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        collectionView.layer.zPosition = -2
+        collectionView.contentInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        let nib = UINib(nibName: FolderCell.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
+        return collectionView
+    }()
+    
+    let titleLabel2: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    let tagCollectionView2: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: LeftAlignedCollectionViewFlowLayout())
+        collectionView.register(SurfingCategoryTagCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryTagCell.identifier)
+     
+         return collectionView
+    }()
+    let textView2: UIView = {
+        let view = UIView()
+        view.layer.zPosition = 1
+        return view
+    }()
+    let containerView2: UIView = {
+        let view = UIView()
+        view.layer.zPosition = -1
+        return view
+    }()
+    let noticeStackView2: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        stackView.spacing = 0
+        return stackView
+    }()
+    
+    let noticeImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "seeshelCharacter")
+        return imageView
+    }()
+    
+    let noticeLabel: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansRegular(size: 16)
+        label.text = "카테고리에 맞는 가리비가 아직 없어요."
+        return label
+    }()
+    
+    func setupUI() {
+        view.addSubview(textView2)
+        textView2.snp.makeConstraints { make in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(132)
+        }
+        
+        textView2.addSubview(titleLabel2)
+        titleLabel2.snp.makeConstraints { make in
+            make.left.equalTo(textView2.snp.left).inset(19)
+            make.bottom.equalTo(textView2.snp.bottom).inset(10)
+            make.height.equalTo(24)
+        }
+        
+        view.addSubview(folderCollectionView2)
+        folderCollectionView2.snp.makeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(textView2)
+        }
+        
+        view.addSubview(noticeStackView2)
+        noticeStackView2.snp.makeConstraints { make in
+            make.center.equalTo(folderCollectionView2.snp.center)
+        }
+        
+        noticeStackView2.addArrangedSubview(noticeImageView)
+        noticeStackView2.addArrangedSubview(noticeLabel)
+        noticeImageView.snp.makeConstraints { make in
+            make.width.height.equalTo(100)
+        }
+        
+        view.addSubview(containerView2)
+        containerView2.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(textView2)
+        }
+        
+        containerView2.addSubview(tagCollectionView2)
+        tagCollectionView2.snp.makeConstraints { make in
+            make.left.right.equalTo(containerView2).inset(20)
+            make.top.bottom.equalTo(containerView2).inset(10)
+            make.height.equalTo(100).priority(.low)
+        }
+    }
+    
     @IBOutlet private weak var folderCollectionView: UICollectionView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var tagCollectionView: UICollectionView!
-    @IBOutlet private weak var heightConstraint: NSLayoutConstraint!
+    
     @IBOutlet private weak var textView: UIView!
     @IBOutlet private weak var containerView: UIView!
-    @IBOutlet private weak var tagTopConstraint: NSLayoutConstraint!
-    @IBOutlet private weak var blueViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var noticeStackView: UIStackView!
     
+    @IBOutlet private weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var tagTopConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var blueViewHeightConstraint: NSLayoutConstraint!
+    
+    
     private let refreshControl = UIRefreshControl()
-    private let categoryMain: [String] = ["개발", "디자인", "마케팅/광고", "기획", "기타"]
+    private let categoryMain = ["개발", "디자인", "마케팅/광고", "기획", "기타"]
     private var tagLength: [CGFloat] = []
     private var lastContentOffset: CGFloat = 0
     private var tagDynamicHeight: CGFloat = 0
@@ -86,7 +188,7 @@ final class SurfingCategoryViewController: UIViewController {
         outputs.categories
             .drive { [weak self] result in
                 guard let self = self else { return }
-                let font: UIFont = UIFont(name: "NotoSansKR-Medium", size: 14) ?? .systemFont(ofSize: 14)
+                let font = UIFont.notoSansMedium(size: 14)
                 self.tagLength = result.map {
                     $0.detailName.size(withAttributes: [NSAttributedString.Key.font: font]).width + 40
                 }
@@ -97,7 +199,13 @@ final class SurfingCategoryViewController: UIViewController {
                 )
                 // 태그 갯수에 따라 컨테이너 뷰 높이 동적으로 변경하기
                 self.tagDynamicHeight = self.tagCollectionView.collectionViewLayout.collectionViewContentSize.height
-                self.heightConstraint.constant = self.tagDynamicHeight
+                self.collectionViewHeightConstraint.constant = self.tagDynamicHeight
+                self.tagCollectionView2.snp.remakeConstraints { make in
+                    make.left.right.equalTo(self.containerView2).inset(20)
+                    make.top.bottom.equalTo(self.containerView2).inset(10)
+                    make.height.equalTo(self.tagDynamicHeight).priority(.low)
+                }
+                
                 self.containerViewHeight = self.tagDynamicHeight + 20
                 // 폴더 셀이 태그따라서 안올라가도록 수정
                 self.folderCollectionView.contentInset.top = self.containerViewHeight + 15
@@ -125,7 +233,7 @@ final class SurfingCategoryViewController: UIViewController {
             }.disposed(by: disposeBag)
 
         outputs.categoryDetailFolders
-            .drive { [weak self] result in
+            .drive { [weak self] _ in
                 guard let self = self else { return }
                 if self.refreshControl.isRefreshing {
                     self.refreshControl.endRefreshing()
@@ -145,7 +253,7 @@ final class SurfingCategoryViewController: UIViewController {
             .disposed(by: disposeBag)
                 
         outputs.toastMessage
-            .emit { [weak self] (message: String) in
+            .emit { [weak self] message in
                 guard let self = self else { return }
                 self.view.makeToast(message, position: .top)
             }
@@ -190,19 +298,10 @@ final class SurfingCategoryViewController: UIViewController {
     private func configureUI() {
         prepareNavigationBar()
         prepareRefreshControler()
-        prepareTagCollectionView()
-        prepareFolderCollectionView()
-        updateUI()
     }
     
     private func fetchData() {
         fetchFolders.accept(())
-    }
-    
-    private func updateUI() {
-        textView.layer.zPosition = 1
-        containerView.layer.zPosition = -1
-        folderCollectionView.layer.zPosition = -2
     }
     
     private func prepareNavigationBar() {
@@ -218,20 +317,6 @@ final class SurfingCategoryViewController: UIViewController {
 
     private func resetFolderData() {
         resetFolders.accept(())
-    }
-    
-    private func prepareFolderCollectionView() {
-        folderCollectionView.delegate = self
-        let nib = UINib(nibName: FolderCell.identifier, bundle: nil)
-        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
-        folderCollectionView.contentInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-    }
-    
-    private func prepareTagCollectionView() {
-        tagCollectionView.register(SurfingCategoryTagCell.classForCoder(), forCellWithReuseIdentifier: SurfingCategoryTagCell.identifier)
-        let layout = LeftAlignedCollectionViewFlowLayout()
-        layout.delegate = self
-        tagCollectionView.collectionViewLayout = layout
     }
     
     private func prepareRefreshControler() {

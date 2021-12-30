@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SFs-lg-wkX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SFs-lg-wkX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -121,9 +121,9 @@
                     </view>
                     <connections>
                         <outlet property="blueViewHeightConstraint" destination="p6W-6N-1fm" id="BYL-kH-CSg"/>
+                        <outlet property="collectionViewHeightConstraint" destination="yCE-4d-tVz" id="CsR-aY-TfH"/>
                         <outlet property="containerView" destination="v0I-Es-Aio" id="O5S-LK-ZeG"/>
                         <outlet property="folderCollectionView" destination="9H7-ov-EAa" id="HSz-2z-xIq"/>
-                        <outlet property="heightConstraint" destination="yCE-4d-tVz" id="CsR-aY-TfH"/>
                         <outlet property="noticeStackView" destination="IKF-jk-I5q" id="n1R-qx-2Zo"/>
                         <outlet property="tagCollectionView" destination="E6P-NC-Heg" id="50n-ap-9AZ"/>
                         <outlet property="tagTopConstraint" destination="9gV-j5-wEi" id="4aL-CC-mgE"/>
