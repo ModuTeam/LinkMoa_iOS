@@ -87,20 +87,8 @@ final class SurfingAssembly: Assembly {
         }
         
         /// SurfingCategoryViewController
-        container.register(SurfingCategoryViewController.self) {
-            (r: Resolver, index: Int) in
-            let sb = UIStoryboard(
-                name: SurfingCategoryViewController.storyboardName(),
-                bundle: bundle
-            )
-            let vc = sb.instantiateInitialViewController { corder in
-                SurfingCategoryViewController(
-                    coder: corder,
-                    viewModel: r.resolve(SurfingCategoryViewModel.self, argument: index)!
-                )
-            }!
-            
-            return vc
+        container.register(SurfingCategoryViewController.self) { (r: Resolver, index: Int) in
+            return SurfingCategoryViewController(viewModel: r.resolve(SurfingCategoryViewModel.self, argument: index)!)
         }
     }
 }
