@@ -29,6 +29,8 @@ final class SurfingCategoryViewController: UIViewController {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "test"
+        label.font = .notoSansMedium(size: 16)
+        label.textColor = .white
         return label
     }()
     
@@ -39,19 +41,19 @@ final class SurfingCategoryViewController: UIViewController {
         layout.delegate = self
         collectionView.collectionViewLayout = layout
         collectionView.backgroundColor = .linkMoaDarkBlueColor
-//        collectionView.showsVerticalScrollIndicator = false
-//        collectionView.isScrollEnabled = false
+        collectionView.showsVerticalScrollIndicator = false
+        collectionView.isScrollEnabled = false
         return collectionView
     }()
     
-    let textView: UIView = {
+    let topView: UIView = {
         let view = UIView()
         view.layer.zPosition = 1
         view.backgroundColor = .linkMoaDarkBlueColor
         return view
     }()
     
-    let containerView: UIView = {
+    let tagContainerView: UIView = {
         let view = UIView()
         view.layer.zPosition = -1
         view.backgroundColor = .linkMoaDarkBlueColor
@@ -77,8 +79,11 @@ final class SurfingCategoryViewController: UIViewController {
         let label = UILabel()
         label.font = .notoSansRegular(size: 16)
         label.text = "카테고리에 맞는 가리비가 아직 없어요."
+        label.textColor = UIColor(rgb: 144)
         return label
     }()
+    
+    private var tagTopConstraint: CGFloat = 0
     
     private let refreshControl = UIRefreshControl()
     private var tagLength: [CGFloat] = []
@@ -119,13 +124,14 @@ final class SurfingCategoryViewController: UIViewController {
         bind()
         fetchCategory.accept(())
         fetchFolders.accept(())
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         scrollBind()
     }
     
     private func bind() {
+        outputs.categoryTitle
+            .drive(titleLabel.rx.text)
+            .disposed(by: disposeBag)
+        
         outputs.isHiddenNoticeView
             .drive(noticeStackView.rx.isHidden)
             .disposed(by: disposeBag)
@@ -152,13 +158,9 @@ final class SurfingCategoryViewController: UIViewController {
                 )
                 // 태그 갯수에 따라 컨테이너 뷰 높이 동적으로 변경하기
                 self.tagDynamicHeight = self.tagCollectionView.collectionViewLayout.collectionViewContentSize.height
-              
-                self.containerView.snp.remakeConstraints { make in
-                    make.left.right.equalToSuperview()
-                    make.top.equalTo(self.textView.snp.bottom)
+                self.tagContainerView.snp.updateConstraints { make in
                     make.height.equalTo(self.tagDynamicHeight + 20)
                 }
-                
                 
                 self.containerViewHeight = self.tagDynamicHeight + 20
          
@@ -173,7 +175,7 @@ final class SurfingCategoryViewController: UIViewController {
             .bind { [weak self] result in
                 guard let self = self else { return }
                 self.folderCollectionView.setContentOffset(
-                    .init(x: -15, y: -self.containerViewHeight - 15),
+                    CGPoint(x: -15, y: -self.containerViewHeight - 15),
                     animated: false
                 )
                 self.changeSubIndex.accept(result.detailIndex)
@@ -219,38 +221,46 @@ final class SurfingCategoryViewController: UIViewController {
     }
     
     private func scrollBind() {
-        //        folderCollectionView.rx.contentOffset
-        //            .map { $0.y }
-        //            .bind { [weak self] contentYoffset in
-        //                guard let self = self else { return }
-        //                let contentHeight = self.folderCollectionView.contentSize.height
-        //                let scrollViewHeight = self.folderCollectionView.frame.size.height
-        //                let delta = contentYoffset - self.lastContentOffset
-        //
-        //                if delta < 0 {
-        //                    // 스크롤 내릴 때
-        //                    if scrollViewHeight + contentYoffset <= contentHeight + 15,
-        //                        contentHeight + 30 > scrollViewHeight {
-        //                        self.tagTopConstraint.constant = min(self.tagTopConstraint.constant - delta, 0)
-        //                    }
-        //                } else {
-        //                    // 스크롤 올릴 때
-        //                    if contentYoffset + self.containerViewHeight + 15 >= 0,
-        //                        contentHeight + 30 > scrollViewHeight {
-        //                        self.tagTopConstraint.constant = max(
-        //                            -self.containerViewHeight,
-        //                             self.tagTopConstraint.constant - delta
-        //                        )
-        //                    }
-        //                }
-        //
-        //                self.lastContentOffset = contentYoffset
-        //
-        //                if contentYoffset > contentHeight - scrollViewHeight {
-        //                    self.fetchFolders.accept(())
-        //                }
-        //            }
-        //            .disposed(by: disposeBag)
+        folderCollectionView.rx.contentOffset
+            .map { $0.y }
+            .bind { [weak self] contentYoffset in
+                guard let self = self else { return }
+                let contentHeight = self.folderCollectionView.contentSize.height
+                let scrollViewHeight = self.folderCollectionView.frame.size.height
+                let delta = contentYoffset - self.lastContentOffset
+                
+                if delta < 0 {
+                    // 스크롤 내릴 때
+                    if scrollViewHeight + contentYoffset <= contentHeight + 15,
+                       contentHeight + 30 > scrollViewHeight {
+                        let constant = min(self.tagTopConstraint - delta, 0)
+                        self.tagTopConstraint = constant
+                        self.tagContainerView.snp.updateConstraints { make in
+                            make.top.equalTo(self.topView.snp.bottom).offset(constant)
+                        }
+                    }
+                } else {
+                    // 스크롤 올릴 때
+                    if contentYoffset + self.containerViewHeight + 15 >= 0,
+                       contentHeight + 30 > scrollViewHeight {
+                        let constant = max(
+                            -self.containerViewHeight,
+                             self.tagTopConstraint - delta
+                        )
+                        self.tagTopConstraint = constant
+                        self.tagContainerView.snp.updateConstraints { make in
+                            make.top.equalTo(self.topView.snp.bottom).offset(constant)
+                        }
+                    }
+                }
+
+                self.lastContentOffset = contentYoffset
+
+                if contentYoffset > contentHeight - scrollViewHeight {
+                    self.fetchFolders.accept(())
+                }
+            }
+            .disposed(by: disposeBag)
     }
     
     private func resetFolderData() {
@@ -286,23 +296,23 @@ extension SurfingCategoryViewController {
     }
     
     private func setupUI() {
-        view.addSubview(textView)
-        textView.snp.makeConstraints { make in
+        view.addSubview(topView)
+        topView.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
             make.height.equalTo(Device.statusBarHeight + Device.navigationBarHeight + 44)
         }
         
-        textView.addSubview(titleLabel)
+        topView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in
-            make.left.equalTo(textView.snp.left).inset(19)
-            make.bottom.equalTo(textView.snp.bottom).inset(10)
+            make.left.equalTo(topView.snp.left).inset(19)
+            make.bottom.equalTo(topView.snp.bottom).inset(10)
             make.height.equalTo(24)
         }
         
         view.addSubview(folderCollectionView)
         folderCollectionView.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
-            make.top.equalTo(textView.snp.bottom)
+            make.top.equalTo(topView.snp.bottom)
         }
         
         view.addSubview(noticeStackView)
@@ -316,17 +326,17 @@ extension SurfingCategoryViewController {
             make.width.height.equalTo(100)
         }
         
-        view.addSubview(containerView)
-        containerView.snp.makeConstraints { make in
+        view.addSubview(tagContainerView)
+        tagContainerView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
-            make.top.equalTo(textView.snp.bottom)
-            make.height.equalTo(0)
+            make.top.equalTo(topView.snp.bottom)
+            make.height.equalTo(20)
         }
         
-        containerView.addSubview(tagCollectionView)
+        tagContainerView.addSubview(tagCollectionView)
         tagCollectionView.snp.makeConstraints { make in
-            make.left.right.equalTo(containerView).inset(20)
-            make.top.bottom.equalTo(containerView).inset(10)
+            make.left.right.equalTo(tagContainerView).inset(20)
+            make.top.bottom.equalTo(tagContainerView).inset(10)
         }
     }
 }
