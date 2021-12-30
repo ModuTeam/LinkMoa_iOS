@@ -15,6 +15,67 @@ import RxSwift
 import RxCocoa
 
 final class SurfingFolderDetailViewController: UIViewController, CustomAlert, BackgroundBlur {
+    
+    private let linkCollectionView2: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 50, right: 16)
+        let nib = UINib(nibName: FolderCell.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
+        return collectionView
+    }()
+    
+    private let folderTitleLabel2: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansMedium(size: 20)
+        label.textColor = .white
+        return label
+    }()
+    
+    private let linkCountLabel2: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansRegular(size: 14)
+        label.textColor = .white
+        return label
+    }()
+    
+    private let likeCountLabel2: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansRegular(size: 14)
+        label.textColor = .white
+        return label
+    }()
+    
+    private let topView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .linkMoaDarkBlueColor
+        return view
+    }()
+    
+    let tagStackView2: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        stackView.spacing = 0
+        return stackView
+    }()
+    
+    let heartImageView2: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "seeshelCharacter")
+        return imageView
+    }()
+    
+    let seashellImageView2: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "seeshelCharacter")
+        return imageView
+    }()
+    
+    
+    
+    private let noticeView2 = SurfingNoticeView(message: "아직 아무것도 저장하지 않았어요.")
+    
     @IBOutlet private weak var folderTitleLabel: UILabel!
     @IBOutlet private weak var tagStackView: UIStackView!
     @IBOutlet private weak var linkCountLabel: UILabel!
@@ -22,9 +83,10 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
     @IBOutlet private weak var userNameButton: UIButton!
     @IBOutlet private weak var linkCollectionView: UICollectionView!
     @IBOutlet private weak var heartImageView: UIImageView!
-    @IBOutlet private weak var blueViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet private weak var likeButton: UIButton!
     @IBOutlet private weak var noticeView: UIStackView!
+    
+    @IBOutlet private weak var blueViewHeightConstraint: NSLayoutConstraint!
     
     private lazy var inputs = SurfingFolderDetailViewModel.Input(
         fetchFolderDetail: fetchFolderTrigger.asSignal(),
@@ -58,10 +120,6 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
         super.viewDidLoad()
         configureUI()
         bind()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         fetchFolderTrigger.accept(())
         homeNC?.addButtonView.isHidden = true
         navigationController?.isNavigationBarHidden = false
@@ -108,10 +166,10 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
             .disposed(by: disposeBag)
         
         linkCollectionView.rx.modelSelected(FolderDetail.Link.self)
-            .bind(onNext: { [weak self] link in
+            .bind { [weak self] link in
                 guard let self = self else { return }
                 self.webManager.openURL(link.url)
-            })
+            }
             .disposed(by: disposeBag)
         
         userNameButton.rx.tap
@@ -148,12 +206,16 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
     }
     
     private func updateUI(folderDetail: FolderDetail.Result) {
-        let tags: [String] = folderDetail.hashTagList.map {$0.name}
+        let tags = folderDetail.hashTagList.map { $0.name }
         updateTagStackView(tags: tags)
         folderTitleLabel.text = folderDetail.name
         userNameButton.setTitle(folderDetail.userNickname, for: .normal)
         linkCountLabel.text = folderDetail.linkCount.toAbbreviationString
-        updateLikeStatus(status: folderDetail.likeStatus, count: folderDetail.likeCount)
+        updateLikeStatus(
+            status: folderDetail.likeStatus,
+            count: folderDetail.likeCount
+        )
+        
     }
     
     private func updateLikeStatus(status: Int, count: Int) {
@@ -171,7 +233,7 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
             let label = UILabel(frame: CGRect.zero)
             label.text = "#" + tag
             label.textColor = UIColor.white
-            label.font = UIFont(name: "NotoSansKR-Regular", size: 14)
+            label.font = .notoSansRegular(size: 14)
             
             tagStackView.addArrangedSubview(label)
         }
@@ -209,29 +271,32 @@ final class SurfingFolderDetailViewController: UIViewController, CustomAlert, Ba
         let title = "더보기"
         let isIncludeRemoveButton = true // 마지막 label red
         let optionTitles = ["URL 공유하기", "신고하기"]
-        let options = [ { [weak self] (_: Any?) in
-            guard let self = self else { return }
-            
-            let shareItem = self.viewModel.shareItem
-            let activityController = UIActivityViewController(
-                activityItems: [shareItem],
-                applicationActivities: nil
-            )
-            
-            activityController.excludedActivityTypes = [
-                .saveToCameraRoll,
-                .print,
-                .assignToContact,
-                .addToReadingList
-            ]
-            
-            self.present(activityController, animated: true)
-        }, { [weak self] (_: Any?) in
-            guard let self = self else { return }
-            self.presentReconfirmView(type: .reportFolder) {
-                self.reportTrigger.accept(())
+        let options = [
+            { [weak self] (_: Any?) in
+                guard let self = self else { return }
+                
+                let shareItem = self.viewModel.shareItem
+                let activityController = UIActivityViewController(
+                    activityItems: [shareItem],
+                    applicationActivities: nil
+                )
+                
+                activityController.excludedActivityTypes = [
+                    .saveToCameraRoll,
+                    .print,
+                    .assignToContact,
+                    .addToReadingList
+                ]
+                
+                self.present(activityController, animated: true)
+            },
+            { [weak self] (_: Any?) in
+                guard let self = self else { return }
+                self.presentReconfirmView(type: .reportFolder) {
+                    self.reportTrigger.accept(())
+                }
             }
-        }]
+        ]
         
         self.presentOptionView(
             title: title,

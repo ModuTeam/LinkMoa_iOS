@@ -23,8 +23,8 @@ final class SurfingAssembly: Assembly {
         }
         
         /// SurfingViewController
-        container.register(SurfingViewController.self) { resolver in
-            return SurfingViewController(viewModel: resolver.resolve(SurfingViewModel.self)!)
+        container.register(SurfingViewController.self) { r in
+            return SurfingViewController(viewModel: r.resolve(SurfingViewModel.self)!)
         }
         
         /// SurfingFolderDetailViewModel
@@ -64,18 +64,7 @@ final class SurfingAssembly: Assembly {
         /// SurfingFolderViewController
         container.register(SurfingFolderViewController.self) {
             (r: Resolver, type: SurfingFolderType) in
-            let sb = UIStoryboard(
-                name: SurfingFolderViewController.storyboardName(),
-                bundle: bundle
-            )
-            let vc = sb.instantiateInitialViewController { corder in
-                SurfingFolderViewController(
-                    coder: corder,
-                    viewModel: r.resolve(SurfingFolderViewModel.self, argument: type)!
-                )
-            }!
-            
-            return vc
+            return SurfingFolderViewController(viewModel: r.resolve(SurfingFolderViewModel.self, argument: type)!)
         }
         
         /// SurfingCategoryViewModel

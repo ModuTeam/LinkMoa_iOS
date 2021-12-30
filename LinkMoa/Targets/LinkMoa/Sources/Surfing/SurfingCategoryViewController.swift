@@ -17,7 +17,7 @@ import SwiftUI
 
 final class SurfingCategoryViewController: UIViewController {
     
-    let folderCollectionView: UICollectionView = {
+    private let folderCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.layer.zPosition = -2
         collectionView.contentInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
@@ -26,7 +26,7 @@ final class SurfingCategoryViewController: UIViewController {
         return collectionView
     }()
     
-    let titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "test"
         label.font = .notoSansMedium(size: 16)
@@ -34,7 +34,7 @@ final class SurfingCategoryViewController: UIViewController {
         return label
     }()
     
-    lazy var tagCollectionView: UICollectionView = {
+    private lazy var tagCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         collectionView.registerCell(SurfingCategoryTagCell.self)
         let layout = LeftAlignedCollectionViewFlowLayout()
@@ -46,42 +46,21 @@ final class SurfingCategoryViewController: UIViewController {
         return collectionView
     }()
     
-    let topView: UIView = {
+    private let topView: UIView = {
         let view = UIView()
         view.layer.zPosition = 1
         view.backgroundColor = .linkMoaDarkBlueColor
         return view
     }()
     
-    let tagContainerView: UIView = {
+    private let tagContainerView: UIView = {
         let view = UIView()
         view.layer.zPosition = -1
         view.backgroundColor = .linkMoaDarkBlueColor
         return view
     }()
     
-    let noticeStackView: UIStackView = {
-        let stackView = UIStackView()
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.distribution = .fill
-        stackView.spacing = 0
-        return stackView
-    }()
-    
-    let noticeImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "seeshelCharacter")
-        return imageView
-    }()
-    
-    let noticeLabel: UILabel = {
-        let label = UILabel()
-        label.font = .notoSansRegular(size: 16)
-        label.text = "카테고리에 맞는 가리비가 아직 없어요."
-        label.textColor = UIColor(rgb: 144)
-        return label
-    }()
+    private let noticeView = SurfingNoticeView(message: "카테고리에 맞는 가리비가 아직 없어요.")
     
     private var tagTopConstraint: CGFloat = 0
     
@@ -133,7 +112,7 @@ final class SurfingCategoryViewController: UIViewController {
             .disposed(by: disposeBag)
         
         outputs.isHiddenNoticeView
-            .drive(noticeStackView.rx.isHidden)
+            .drive(noticeView.rx.isHidden)
             .disposed(by: disposeBag)
         
         outputs.categories
@@ -315,16 +294,11 @@ extension SurfingCategoryViewController {
             make.top.equalTo(topView.snp.bottom)
         }
         
-        view.addSubview(noticeStackView)
-        noticeStackView.snp.makeConstraints { make in
+        view.addSubview(noticeView)
+        noticeView.snp.makeConstraints { make in
             make.center.equalTo(folderCollectionView.snp.center)
         }
         
-        noticeStackView.addArrangedSubview(noticeImageView)
-        noticeStackView.addArrangedSubview(noticeLabel)
-        noticeImageView.snp.makeConstraints { make in
-            make.width.height.equalTo(100)
-        }
         
         view.addSubview(tagContainerView)
         tagContainerView.snp.makeConstraints { make in

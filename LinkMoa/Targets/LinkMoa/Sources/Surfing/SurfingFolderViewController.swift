@@ -29,11 +29,37 @@ enum SurfingFolderType {
 }
 
 final class SurfingFolderViewController: UIViewController {
-    @IBOutlet private weak var folderCollectionView: UICollectionView!
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var countLabel: UILabel!
-    @IBOutlet private weak var noticeView: UIStackView!
 
+    private let folderCollectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 50, right: 16)
+        let nib = UINib(nibName: FolderCell.identifier, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
+        return collectionView
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansMedium(size: 20)
+        label.textColor = .white
+        return label
+    }()
+    
+    private let countLabel: UILabel = {
+        let label = UILabel()
+        label.font = .notoSansRegular(size: 14)
+        label.textColor = .white
+        return label
+    }()
+    
+    private let topView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .linkMoaDarkBlueColor
+        return view
+    }()
+    
+    private let noticeView = SurfingNoticeView(message: "아직 아무것도 찜하지 않았어요.")
+    
     private lazy var inputs = SurfingFolderViewModel.Input(
         fetchFolder: fetchFolder.asSignal()
     )
@@ -45,10 +71,10 @@ final class SurfingFolderViewController: UIViewController {
     // Dependency Injection
     private let viewModel: SurfingFolderViewModel
     weak var homeNC: HomeNavigationController? /// Property Injection
-    
-    init?(coder: NSCoder, viewModel: SurfingFolderViewModel) {
+   
+    init(viewModel: SurfingFolderViewModel) {
         self.viewModel = viewModel
-        super.init(coder: coder)
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -102,6 +128,9 @@ final class SurfingFolderViewController: UIViewController {
     }
     
     private func bindUI() {
+        folderCollectionView.rx.setDelegate(self)
+            .disposed(by: disposeBag)
+        
         folderCollectionView.rx.modelSelected(IntegratedFolder.self)
             .bind { [weak self] (folder: IntegratedFolder) in
                 guard let self = self else { return }
@@ -113,25 +142,52 @@ final class SurfingFolderViewController: UIViewController {
             }
             .disposed(by: disposeBag)
     }
+}
+
+extension SurfingFolderViewController {
     
     private func configureUI() {
-        prepareFolderCollectionView()
-        prepareNavigationBar()
+        setupNavigationBar()
+        setupUI()
     }
     
-    private func prepareNavigationBar() {
+    private func setupNavigationBar() {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = .black
     }
     
-    private func prepareFolderCollectionView() {
-        folderCollectionView.delegate = self
-        let nib = UINib(nibName: FolderCell.identifier, bundle: Bundle.module)
-        folderCollectionView.register(nib, forCellWithReuseIdentifier: FolderCell.identifier)
-        let layout = UICollectionViewFlowLayout()
-        folderCollectionView.collectionViewLayout = layout
-        folderCollectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 50, right: 16)
+    private func setupUI() {
+        view.addSubview(topView)
+        topView.snp.makeConstraints { make in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(158)
+        }
+        print(Device.statusBarHeight + Device.navigationBarHeight)
+        
+        topView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { make in
+            make.left.equalTo(topView.snp.left).inset(22)
+            make.bottom.equalTo(topView.snp.bottom).inset(20)
+        }
+        
+        topView.addSubview(countLabel)
+        countLabel.snp.makeConstraints { make in
+            make.left.equalTo(titleLabel.snp.right).offset(10)
+            make.bottom.equalTo(titleLabel.snp.bottom)
+        }
+        
+        view.addSubview(folderCollectionView)
+        folderCollectionView.snp.makeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(topView.snp.bottom)
+        }
+        
+        view.addSubview(noticeView)
+        noticeView.snp.makeConstraints { make in
+            make.center.equalTo(folderCollectionView.snp.center)
+        }
     }
+    
 }
 
 extension SurfingFolderViewController: UICollectionViewDelegateFlowLayout {
@@ -144,4 +200,5 @@ extension SurfingFolderViewController: UICollectionViewDelegateFlowLayout {
         let height: CGFloat = 214
         return CGSize(width: width, height: height)
     }
+    
 }
