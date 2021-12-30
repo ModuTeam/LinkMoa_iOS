@@ -22,20 +22,23 @@ final class SurfingCategoryViewModel: ViewModelType {
     }
     
     struct Output {
+        var categoryTitle: Driver<String>
         var categoryDetailFolders: Driver<[IntegratedFolder]>
         var categories: Driver<[CategoryInfo.DetailCategoryList]>
         var toastMessage: Signal<String>
         var isHiddenNoticeView: Driver<Bool>
     }
     
+    private let categoryTitle = BehaviorRelay<String>(value: "")
     private let toastMessage = PublishRelay<String>()
     private let isHiddenNoticeView = BehaviorRelay<Bool>(value: true)
     private let disposeBag = DisposeBag()
     
     private var lastFolderIndex: Int = 0
     private var folderSubIndex: Int = 0
-    private var isFetching: Bool = false
-    private var isEnd: Bool = false
+    private var isFetching = false
+    private var isEnd = false
+    private let titleList = ["개발", "디자인", "마케팅/광고", "기획", "기타"]
     
     // DI
     private let networkProvider: MoyaProvider<LinkMoaAPI>
@@ -50,6 +53,7 @@ final class SurfingCategoryViewModel: ViewModelType {
     }
     
     func transform(input: Input) -> Output {
+        
         let folders: BehaviorRelay<[IntegratedFolder]> = .init(value: [])
         
         input.fetchFolders
@@ -103,6 +107,7 @@ final class SurfingCategoryViewModel: ViewModelType {
             .disposed(by: disposeBag)
         
         return Output(
+            categoryTitle: categoryTitle.asDriver(),
             categoryDetailFolders: folders.asDriver(),
             categories: categories,
             toastMessage: toastMessage.asSignal(),
@@ -148,6 +153,7 @@ extension SurfingCategoryViewModel {
             .map(CategoryInfo.self)
             .map { [weak self] response in
                 guard let self = self else { return [] }
+                self.categoryTitle.accept("\(self.titleList[self.folderMainIndex - 1]) 카테고리")
                 if response.isSuccess, let result = response.result {
                     var categories: [CategoryInfo.DetailCategoryList] = []
                     categories.append(.init(detailIndex: 0, detailName: "전체"))
