@@ -119,17 +119,6 @@
                             <constraint firstItem="0Nl-Hp-Qpz" firstAttribute="top" secondItem="LoO-yN-3jr" secondAttribute="top" id="yhg-20-yhy"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="blueViewHeightConstraint" destination="p6W-6N-1fm" id="BYL-kH-CSg"/>
-                        <outlet property="collectionViewHeightConstraint" destination="yCE-4d-tVz" id="CsR-aY-TfH"/>
-                        <outlet property="containerView" destination="v0I-Es-Aio" id="O5S-LK-ZeG"/>
-                        <outlet property="folderCollectionView" destination="9H7-ov-EAa" id="HSz-2z-xIq"/>
-                        <outlet property="noticeStackView" destination="IKF-jk-I5q" id="n1R-qx-2Zo"/>
-                        <outlet property="tagCollectionView" destination="E6P-NC-Heg" id="50n-ap-9AZ"/>
-                        <outlet property="tagTopConstraint" destination="9gV-j5-wEi" id="4aL-CC-mgE"/>
-                        <outlet property="textView" destination="0Nl-Hp-Qpz" id="frO-wm-bRm"/>
-                        <outlet property="titleLabel" destination="YFM-re-AwE" id="JGV-qJ-h2T"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gg2-IR-538" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
