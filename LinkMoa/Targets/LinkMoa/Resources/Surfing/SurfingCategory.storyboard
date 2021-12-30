@@ -58,13 +58,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0I-Es-Aio">
-                                <rect key="frame" x="0.0" y="132" width="414" height="140"/>
+                                <rect key="frame" x="0.0" y="132" width="414" height="120"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-NC-Heg">
-                                        <rect key="frame" x="20" y="10" width="374" height="120"/>
+                                        <rect key="frame" x="20" y="10" width="374" height="100"/>
                                         <color key="backgroundColor" name="DarkBlue"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" priority="999" constant="120" id="yCE-4d-tVz"/>
+                                            <constraint firstAttribute="height" priority="999" constant="100" id="yCE-4d-tVz"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="6" id="Mtj-eB-Phh">
                                             <size key="itemSize" width="128" height="128"/>
