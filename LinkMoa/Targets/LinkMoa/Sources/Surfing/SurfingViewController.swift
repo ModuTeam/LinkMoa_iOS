@@ -103,7 +103,7 @@ final class SurfingViewController: UIViewController {
     }
     
     private func prepareCollectionView() {
-        
+        surfingCollectionView.backgroundColor = UIColor.init(rgb: 0xf9f9f9)
         surfingCollectionView.register(
             UINib(nibName: FolderCell.identifier, bundle: nil),
             forCellWithReuseIdentifier: FolderCell.identifier
