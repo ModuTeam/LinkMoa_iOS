@@ -28,7 +28,6 @@ final class SurfingCategoryViewController: UIViewController {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "test"
         label.font = .notoSansMedium(size: 16)
         label.textColor = .white
         return label

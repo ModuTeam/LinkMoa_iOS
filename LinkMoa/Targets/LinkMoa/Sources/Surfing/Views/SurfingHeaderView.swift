@@ -38,6 +38,7 @@ final class SurfingHeaderView: UICollectionReusableView, Reusable {
     }
     
     private func setupUI() {
+        backgroundColor = .red
         addSubview(titleLabel)
         addSubview(moreButton)
         

@@ -55,7 +55,7 @@ final class SurfingViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.homeNC?.addButtonView.isHidden = true
+        homeNC?.addButtonView.isHidden = true
     }
     
     private func setupUI() {

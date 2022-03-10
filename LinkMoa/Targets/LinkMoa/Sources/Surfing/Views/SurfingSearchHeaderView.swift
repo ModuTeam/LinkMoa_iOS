@@ -11,6 +11,14 @@ import SnapKit
 
 final class SurfingSearchHeaderView: UICollectionReusableView, Reusable {
     
+    let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        return stackView
+    }()
+    
+    let insetView = UIView()
+    
     let searchView: UIView = {
         let view = UIView()
         view.layer.borderWidth = 1
@@ -44,14 +52,15 @@ final class SurfingSearchHeaderView: UICollectionReusableView, Reusable {
         let button = UIButton()
         button.setImage(UIImage(systemName: "chevron.backward"), for: .normal)
         button.setTitle("더보기", for: .normal)
-        button.setTitleColor(UIColor(rgb: 0x364788), for: .normal)
+        button.setTitleColor(.linkMoaDarkBlueColor, for: .normal)
         button.semanticContentAttribute = .forceRightToLeft
-        button.tintColor = UIColor(rgb: 0x364788)
+        button.tintColor = .linkMoaDarkBlueColor
         return button
     }()
     
     let titleHeaderView: UIView = {
         let view = UIView()
+        view.backgroundColor = .red
         return view
     }()
     
@@ -65,13 +74,19 @@ final class SurfingSearchHeaderView: UICollectionReusableView, Reusable {
     }
     
     private func setupUI() {
-        addSubview(searchView)
+        addSubview(stackView)
+        stackView.snp.makeConstraints { make in
+            make.top.bottom.equalTo(self)
+            make.left.right.equalTo(self).inset(16)
+        }
+        stackView.addArrangedSubview(insetView)
+        insetView.backgroundColor = .blue
+        insetView.addSubview(searchView)
         searchView.addSubview(imageView)
         searchView.addSubview(placeholderLabel)
         
         searchView.snp.makeConstraints { make in
-            make.left.right.equalTo(self).inset(16)
-            make.top.equalTo(self).inset(20)
+            make.left.right.bottom.equalTo(insetView)
             make.height.equalTo(53)
         }
         
@@ -87,24 +102,25 @@ final class SurfingSearchHeaderView: UICollectionReusableView, Reusable {
             make.centerY.equalTo(searchView)
         }
         
-        addSubview(titleHeaderView)
+        stackView.addArrangedSubview(titleHeaderView)
+//        addSubview(titleHeaderView)
         titleHeaderView.addSubview(titleLabel)
         titleHeaderView.addSubview(moreButton)
         
         titleHeaderView.snp.makeConstraints { make in
-            make.left.right.bottom.equalTo(self)
-            make.height.equalTo(53)
+//            make.left.right.bottom.equalTo(self)
+            make.height.equalTo(50)
         }
         
         titleLabel.snp.makeConstraints { make in
-            make.left.equalTo(titleHeaderView).inset(18)
+            make.left.equalTo(titleHeaderView).inset(2)
             make.height.equalTo(27)
             make.centerY.equalTo(titleHeaderView)
         }
         
         moreButton.snp.makeConstraints { make in
             make.centerY.equalTo(titleHeaderView)
-            make.right.equalTo(titleHeaderView).inset(18)
+            make.right.equalTo(titleHeaderView).inset(2)
         }
     }
 }
