@@ -12,7 +12,6 @@ import Swinject
 
 final class DIContainer {
     static let shared = DIContainer()
-    private let container = Container()
     private let assembler: Assembler
     
     private init() {
@@ -21,15 +20,14 @@ final class DIContainer {
                 CoreAssembly(),
                 WebAssembly(),
                 SceneAssembly()
-            ],
-            container: container
+            ]
         )
     }
 }
 
 extension DIContainer {
     func resolve<T>() -> T {
-        guard let resolved = container.resolve(T.self) else {
+        guard let resolved = assembler.resolver.resolve(T.self) else {
             fatalError("resolve failed")
         }
         
@@ -37,7 +35,7 @@ extension DIContainer {
     }
     
     func resolve<T, Arg>(argument: Arg) -> T {
-        guard let resolved = container.resolve(T.self, argument: argument) else {
+        guard let resolved = assembler.resolver.resolve(T.self, argument: argument) else {
             fatalError("resolve failed")
         }
         
@@ -45,7 +43,7 @@ extension DIContainer {
     }
     
     func resolve<T, Arg1, Arg2>(arguments arg1: Arg1, _ arg2: Arg2) -> T {
-        guard let resolved = container.resolve(T.self, arguments: arg1, arg2) else {
+        guard let resolved = assembler.resolver.resolve(T.self, arguments: arg1, arg2) else {
             fatalError("resolve failed")
         }
         
@@ -53,7 +51,7 @@ extension DIContainer {
     }
     
     func resolve<T, Arg1, Arg2, Arg3>(arguments arg1: Arg1, _ arg2: Arg2, _ arg3: Arg3) -> T {
-        guard let resolved = container.resolve(T.self, arguments: arg1, arg2, arg3) else {
+        guard let resolved = assembler.resolver.resolve(T.self, arguments: arg1, arg2, arg3) else {
             fatalError("resolve failed")
         }
         

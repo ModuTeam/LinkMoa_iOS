@@ -72,7 +72,8 @@ final class SearchLinkResultViewModel: ViewModelType {
                 return self.networkProvider.rx.request(.searchLink(params: param))
             }
             .map(SearchLink.self)
-            .subscribe(onNext: { response in
+            .subscribe(onNext: { [weak self] response in
+                guard let self = self else { return }
                 guard response.isSuccess else {
                     self.errorMessage.accept("서버 요청이 실패했습니다.")
                     self.isFetching = false
@@ -114,7 +115,8 @@ final class SearchLinkResultViewModel: ViewModelType {
                 return self.networkProvider.rx.request(.searchLink(params: param))
             }
             .map(SearchLink.self)
-            .subscribe(onNext: { response in
+            .subscribe(onNext: { [weak self] response in
+                guard let self = self else { return }
                 guard response.isSuccess else {
                     self.errorMessage.accept("서버 요청이 실패했습니다.")
                     self.isFetching = false
