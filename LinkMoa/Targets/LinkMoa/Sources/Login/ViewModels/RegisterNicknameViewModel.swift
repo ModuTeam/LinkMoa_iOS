@@ -72,15 +72,18 @@ final class RegisterNicknameViewModel: ViewModelType {
                 return self.linkMoaProvider.rx.request(api)
             }
             .map(EditUserInformationResponse.self)
+            .catchError { error in
+              self.toastMessage.accept(error.localizedDescription)
+              return .never()
+            }
             .subscribe(onNext: { [weak self] response in
                 guard let self = self else { return }
 
                 if response.isSuccess, response.code == 1000 {
-                    self.nextProgress.accept(())
+                  self.nextProgress.accept(())
                 } else {
-                    self.toastMessage.accept("중복된 닉네임입니다.")
+                  self.toastMessage.accept(response.message)
                 }
-
             }, onError: { [weak self] error in
                 guard let self = self else { return }
                 self.toastMessage.accept(error.localizedDescription)

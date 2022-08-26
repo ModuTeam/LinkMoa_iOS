@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let settings = Settings(base: LinkMoaBaseSetting.settings())
+let settings = Settings.settings(base: LinkMoaBaseSetting.settings())
 
 let targets = LinkMoa.allCases.map {
     Target(

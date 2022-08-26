@@ -32,11 +32,11 @@ public enum LinkMoaBaseSetting: String, CaseIterable {
         }
     }
     
-    public static func settings() -> [String: SettingValue] {
-        var settingsDict: [String: SettingValue] = SettingsDictionary()
+  public static func settings() -> [String: SettingValue] {
+    var settingsDict: [String: SettingValue] = SettingsDictionary()
         
         self.allCases.forEach { key in
-            settingsDict[key.rawValue] = SettingValue(stringLiteral: key.value)
+          settingsDict[key.rawValue] = SettingValue(stringLiteral: key.value)
         }
         
         return settingsDict

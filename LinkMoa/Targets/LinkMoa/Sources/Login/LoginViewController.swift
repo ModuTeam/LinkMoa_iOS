@@ -90,6 +90,11 @@ final class LoginViewController: UIViewController {
                 }
             }
             .disposed(by: disposeBag)
+      
+      output.toastMessage
+        .emit { [weak self] message in
+          self?.view.makeToast(message)
+        }.disposed(by: disposeBag)
     }
     
     private func configureUI() {
